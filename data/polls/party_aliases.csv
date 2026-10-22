@@ -1,0 +1,90 @@
+party_as_listed,party,columns_spanned,first_seen,last_seen,n_rows,note
+Amcha Yisrael,Amcha Yisrael,Amcha Yisrael,2026-08-24,2026-10-22,102,
+Balad,Balad,Balad,2022-12-23,2026-08-20,879,
+Netanyahu,Benjamin Netanyahu party (hypothetical),Netanyahu,2026-06-02,2026-06-25,2,
+Bennett,Bennett 2026,Bennett,2023-04-16,2024-11-08,20,Hypothetical Bennett party before it was founded; same entity as Bennett 2026.
+Bennett 2026,Bennett 2026,Bennett 2026,2025-03-17,2026-04-24,305,Naftali Bennett's party; earlier polls call it 'Party of Naftali Bennett' / 'Bennett'.
+Bennett party,Bennett 2026,Bennett party,2024-07-04,2025-03-13,119,Hypothetical Bennett party before it was founded.
+Naftali Bennett,Bennett 2026,Naftali Bennett,2025-03-05,2025-03-05,1,Hypothetical Bennett party before it was founded.
+Hendel & Bennett,Bennett 2026 + The Reservists (Hendel) (scenario),Hendel & Bennett,2023-06-01,2023-06-01,1,Hendel-Bennett merger scenario.
+Bennett 2026+Yashar,Bennett 2026 + Yashar (Eisenkot),Bennett 2026+Yashar,2025-07-03,2026-04-23,8,"joint cell spanning the columns Bennett 2026, Yashar (merger scenario / joint run)"
+Bennett 2026+Yashar+Yesh Atid,Bennett 2026 + Yashar (Eisenkot) + Yesh Atid,Bennett 2026+Yashar+Yesh Atid,2026-01-22,2026-01-29,2,"joint cell spanning the columns Bennett 2026, Yashar, Yesh Atid (merger scenario / joint run)"
+Bennett 2026+Yesh Atid+Yashar,Bennett 2026 + Yesh Atid + Yashar (Eisenkot),Bennett 2026+Yesh Atid+Yashar,2026-04-27,2026-07-09,9,"joint cell spanning the columns Bennett 2026, Yesh Atid, Yashar (merger scenario / joint run)"
+Bennett 2026+Yesh Atid+Yashar+Yisrael Beiteinu,Bennett 2026 + Yesh Atid + Yashar (Eisenkot) + Yisrael Beiteinu,Bennett 2026+Yesh Atid+Yashar+Yisrael Beiteinu,2026-05-13,2026-05-20,5,"joint cell spanning the columns Bennett 2026, Yesh Atid, Yashar, Yisrael Beiteinu (merger scenario / joint run)"
+Bennett + Cohen+Yisrael Beiteinu,Bennett 2026 + Yossi Cohen party (scenario) + Yisrael Beiteinu,Bennett + Cohen+Yisrael Beiteinu,2024-05-30,2024-05-30,1,"joint cell spanning the columns Bennett + Cohen, Yisrael Beiteinu (merger scenario / joint run)"
+Blue & White,Blue and White,Blue & White,2025-06-06,2026-10-19,529,Benny Gantz's party; ran as National Unity in 2022 and polled under that name until the National Unity split (2025).
+Blue & White+Reserv.,Blue and White + The Reservists (Hendel),Blue & White+Reserv.,2026-02-19,2026-02-26,2,"joint cell spanning the columns Blue & White, Reserv. (merger scenario / joint run)"
+Blue & White+Unity,Blue and White + Unity,Blue & White+Unity,2026-08-24,2026-08-31,3,"joint cell spanning the columns Blue & White, Unity (merger scenario / joint run)"
+Blue & White+Zionist Home,Blue and White + Zionist Home,Blue & White+Zionist Home,2026-02-12,2026-08-31,7,"joint cell spanning the columns Blue & White, Zionist Home (merger scenario / joint run)"
+Simchi,Dedi Simchi party,Simchi,2026-05-14,2026-05-14,1,
+Simchi+Blue & White,Dedi Simchi party + Blue and White,Simchi+Blue & White,2026-06-11,2026-08-06,7,"joint cell spanning the columns Simchi, Blue & White (merger scenario / joint run)"
+Hadash –Ta'al,Hadash–Ta'al,Hadash –Ta'al,2022-12-23,2026-08-20,920,
+Haredi Public,Haredi Public,Haredi Public,2026-09-07,2026-10-22,50,
+Hadash –Ta'al+Balad,Joint List (Hadash–Ta'al + Balad),Hadash –Ta'al+Balad,2026-06-11,2026-08-06,18,Cell spanning Hadash–Ta'al and Balad sub-columns = joint run.
+Joint List,Joint List (Hadash–Ta'al + Balad),Joint List,2026-07-09,2026-10-22,133,In the newest tables 'Joint List' is a single column next to a separate Ra'am column: Hadash–Ta'al + Balad.
+Joint List,Joint List (Ra'am + Hadash–Ta'al + Balad),Ra'am+Hadash –Ta'al+Balad,2025-12-04,2026-06-11,38,Cell spanning all three Arab-party sub-columns = four-party Joint List incl. Ra'am.
+Labor,Labor,Labor,2022-12-23,2024-06-28,254,Merged with Meretz into The Democrats (June 2024).
+Likud,Likud,Likud,2022-12-23,2026-10-22,1098,
+Likud (led by Netanyahu),Likud,Likud (led by Netanyahu),2023-09-07,2024-01-21,3,Alternative-leadership table: Likud under Netanyahu (baseline column).
+Likud (led by Barkat),"Likud (led by Nir Barkat, scenario)",Likud (led by Barkat),2023-09-07,2024-01-21,3,Alternative-leadership scenario.
+Likud (led by Gallant),"Likud (led by Yoav Gallant, scenario)",Likud (led by Gallant),2023-09-07,2023-11-30,2,Alternative-leadership scenario.
+Likud (led by Cohen),"Likud (led by Yossi Cohen, scenario)",Likud (led by Cohen),2023-11-30,2023-12-28,2,Alternative-leadership scenario.
+Likud+RZP,Likud + Religious Zionist Party,Likud+RZP,2026-08-31,2026-08-31,1,"joint cell spanning the columns Likud, RZP (merger scenario / joint run)"
+Likud B,Likud B (hypothetical),Likud B,2026-04-26,2026-08-05,14,
+Likud B+Blue & White,Likud B (hypothetical) + Blue and White,Likud B+Blue & White,2025-10-16,2026-07-30,3,"joint cell spanning the columns Likud B, Blue & White (merger scenario / joint run)"
+Likud B+Blue & White+Zionist Home,Likud B (hypothetical) + Blue and White + Zionist Home,Likud B+Blue & White+Zionist Home,2026-07-06,2026-08-06,2,"joint cell spanning the columns Likud B, Blue & White, Zionist Home (merger scenario / joint run)"
+Meretz,Meretz,Meretz,2022-12-23,2024-06-28,254,Merged with Labor into The Democrats (June 2024).
+NEP,NEP,NEP,2026-04-30,2026-09-02,29,
+National Unity,National Unity,National Unity,2022-12-23,2025-08-29,457,Gantz-Eisenkot list 2022; later polled as Blue & White after Eisenkot left.
+National Unity+New Hope,National Unity + New Hope,National Unity+New Hope,2023-03-23,2024-03-07,35,"joint cell spanning the columns National Unity, New Hope (merger scenario / joint run)"
+New Hope,New Hope,New Hope,2024-02-11,2025-08-29,200,"Gideon Sa'ar; ran inside National Unity in 2022, later merged into Likud."
+New Hope+Bennett + Cohen,New Hope + Bennett 2026 + Yossi Cohen party (scenario),New Hope+Bennett + Cohen,2024-03-13,2024-06-10,4,"joint cell spanning the columns New Hope, Bennett + Cohen (merger scenario / joint run)"
+New Hope+Bennett + Cohen+Yisrael Beiteinu,New Hope + Bennett 2026 + Yossi Cohen party (scenario) + Yisrael Beiteinu,New Hope+Bennett + Cohen+Yisrael Beiteinu,2024-05-29,2024-07-07,5,"joint cell spanning the columns New Hope, Bennett + Cohen, Yisrael Beiteinu (merger scenario / joint run)"
+New Hope+Yisrael Beiteinu,New Hope + Yisrael Beiteinu,New Hope+Yisrael Beiteinu,2024-06-28,2024-07-10,4,"joint cell spanning the columns New Hope, Yisrael Beiteinu (merger scenario / joint run)"
+New Hope+Yisrael Beiteinu+Bennett 2026,New Hope + Yisrael Beiteinu + Bennett 2026,New Hope+Yisrael Beiteinu+Bennett 2026,2024-09-04,2024-09-04,1,"joint cell spanning the columns New Hope, Yisrael Beiteinu, Bennett 2026 (merger scenario / joint run)"
+Noam,Noam,Noam,2023-09-07,2025-03-05,16,
+Winter,Ofer Winter party,Winter,2026-02-18,2026-08-23,7,
+Winter party,Ofer Winter party,Winter party,2026-08-09,2026-08-24,9,
+Winter+RZP,Ofer Winter party + Religious Zionist Party,Winter+RZP,2025-06-06,2026-01-07,2,"joint cell spanning the columns Winter, RZP (merger scenario / joint run)"
+Winter+Tov+ Haddad + Deri,Ofer Winter party + Shem Tov + Haddad + Deri party (hypothetical),Winter+Tov+ Haddad + Deri,2026-08-23,2026-08-23,1,"joint cell spanning the columns Winter, Tov+ Haddad + Deri (merger scenario / joint run)"
+Otzma,Otzma Yehudit,Otzma,2023-01-26,2026-10-22,1059,Ran jointly with RZP in 2022.
+Ra'am,Ra'am,Ra'am,2022-12-23,2026-10-22,1071,Technical bloc with Yoav Segalovitz in 2026.
+Protest Party,Reform protest party (hypothetical),Protest Party,2023-05-07,2024-01-25,7,
+RZP,Religious Zionist Party,RZP,2023-01-26,2026-09-02,942,
+RZP+Amcha Yisrael,Religious Zionist Party + Amcha Yisrael,RZP+Amcha Yisrael,2026-08-26,2026-08-26,1,"joint cell spanning the columns RZP, Amcha Yisrael (merger scenario / joint run)"
+RZP+Otzma,Religious Zionist Party + Otzma Yehudit,RZP+Otzma,2022-12-23,2026-08-31,50,"joint cell spanning the columns RZP, Otzma (merger scenario / joint run)"
+RZP - Zehut,Religious Zionist Party + Zehut,RZP+Zehut,2026-09-02,2026-10-22,70,Technical bloc RZP + Zehut for 2026.
+RZP+Zehut,Religious Zionist Party + Zehut,RZP+Zehut,2026-08-30,2026-09-04,9,Technical bloc RZP + Zehut for 2026.
+RZP - Zehut+Amcha Yisrael,Religious Zionist Party + Zehut + Amcha Yisrael,RZP - Zehut+Amcha Yisrael,2026-09-02,2026-09-02,1,"joint cell spanning the columns RZP - Zehut, Amcha Yisrael (merger scenario / joint run)"
+Right-wing liberal party,Right-wing liberal party (hypothetical),Right-wing liberal party,2023-03-16,2023-09-14,4,
+Shas,Shas,Shas,2022-12-23,2026-10-22,1109,
+Dems,The Democrats (Labor + Meretz),Dems,2023-04-16,2026-10-22,841,
+Labor+Meretz,The Democrats (Labor + Meretz),Labor+Meretz,2023-04-16,2024-06-24,14,Joint cell before the formal merger.
+Hendel,The Reservists (Hendel),Hendel,2023-03-23,2024-03-07,5,"Hypothetical Hendel party, later The Reservists."
+Hendel party,The Reservists (Hendel),Hendel party,2025-03-17,2025-06-26,63,Hypothetical Hendel party before it was founded.
+Reserv.,The Reservists (Hendel),Reserv.,2024-07-04,2026-08-26,254,Yoaz Hendel's party; polls before 18 Sep 2025 call it 'Party of Yoaz Hendel'.
+Reserv. - NEP,The Reservists + NEP,Reserv.+NEP,2026-09-06,2026-10-22,66,Joint run of The Reservists and NEP (2026).
+Reserv.+NEP,The Reservists + NEP,Reserv.+NEP,2026-04-30,2026-04-30,1,Joint run of The Reservists and NEP (2026).
+Together,Together (Bennett 2026 + Yesh Atid),Together,2026-04-07,2026-10-22,349,Joint list of Bennett 2026 and Yesh Atid announced in 2026.
+Together+Yashar,Together (Bennett 2026 + Yesh Atid) + Yashar (Eisenkot),Together+Yashar,2026-09-03,2026-09-03,1,"joint cell spanning the columns Together, Yashar (merger scenario / joint run)"
+Together+Yashar+Tropper,Together (Bennett 2026 + Yesh Atid) + Yashar (Eisenkot) + Hili Tropper party,Together+Yashar+Tropper,2026-08-26,2026-08-26,1,"joint cell spanning the columns Together, Yashar, Tropper (merger scenario / joint run)"
+UTJ,United Torah Judaism,UTJ,2022-12-23,2026-10-22,1109,Agudat Yisrael + Degel HaTorah (+ Homat Torat Yisrael).
+Unity,Unity,Unity,2026-08-06,2026-09-04,73,
+Levin,Yariv Levin party (hypothetical),Levin,2023-05-24,2023-05-24,1,
+Yashar,Yashar (Eisenkot),Yashar,2025-07-01,2026-10-22,575,Gadi Eisenkot's party; polls before 16 Sep 2025 call it 'Party of Gadi Eisenkot'.
+Yashar+Tropper,Yashar (Eisenkot) + Hili Tropper party,Yashar+Tropper,2026-07-12,2026-08-17,3,"joint cell spanning the columns Yashar, Tropper (merger scenario / joint run)"
+Yashar+Yesh Atid,Yashar (Eisenkot) + Yesh Atid,Yashar+Yesh Atid,2025-07-03,2026-02-26,3,"joint cell spanning the columns Yashar, Yesh Atid (merger scenario / joint run)"
+Yashar+Yisrael Beiteinu,Yashar (Eisenkot) + Yisrael Beiteinu,Yashar+Yisrael Beiteinu,2025-07-03,2026-05-13,7,"joint cell spanning the columns Yashar, Yisrael Beiteinu (merger scenario / joint run)"
+Yesh Atid,Yesh Atid,Yesh Atid,2022-12-23,2026-04-24,737,Ran alone in 2022; polled alone until it was folded into 'Together' with Bennett 2026 (2026).
+Yesh Atid+National Unity,Yesh Atid + National Unity,Yesh Atid+National Unity,2024-07-07,2024-07-07,1,"joint cell spanning the columns Yesh Atid, National Unity (merger scenario / joint run)"
+Yesh Atid+Yashar,Yesh Atid + Yashar (Eisenkot),Yesh Atid+Yashar,2026-02-18,2026-02-18,1,"joint cell spanning the columns Yesh Atid, Yashar (merger scenario / joint run)"
+Yisrael Beiteinu,Yisrael Beiteinu,Yisrael Beiteinu,2022-12-23,2026-10-22,1082,
+Yisrael Beiteinu+Bennett 2026,Yisrael Beiteinu + Bennett 2026,Yisrael Beiteinu+Bennett 2026,2024-08-22,2025-08-29,4,"joint cell spanning the columns Yisrael Beiteinu, Bennett 2026 (merger scenario / joint run)"
+Gallant,Yoav Gallant party (hypothetical),Gallant,2024-03-03,2024-11-18,4,
+Cohen,Yossi Cohen party (hypothetical),Cohen,2023-04-16,2024-03-13,9,
+Zehut,Zehut,Zehut,2026-08-26,2026-08-31,13,
+Zehut+RZP,Zehut + Religious Zionist Party,Zehut+RZP,2026-08-31,2026-09-03,3,"joint cell spanning the columns Zehut, RZP (merger scenario / joint run)"
+Zehut+RZP+Amcha Yisrael,Zehut + Religious Zionist Party + Amcha Yisrael,Zehut+RZP+Amcha Yisrael,2026-09-03,2026-09-03,1,"joint cell spanning the columns Zehut, RZP, Amcha Yisrael (merger scenario / joint run)"
+Zionist Home,Zionist Home,Zionist Home,2025-06-06,2026-09-04,205,
+Zionist Home+Blue & White+Unity,Zionist Home + Blue and White + Unity,Zionist Home+Blue & White+Unity,2026-08-10,2026-08-10,1,"joint cell spanning the columns Zionist Home, Blue & White, Unity (merger scenario / joint run)"
+Zionist Home+Blue & White+Unity+NEP,Zionist Home + Blue and White + Unity + NEP,Zionist Home+Blue & White+Unity+NEP,2026-09-02,2026-09-02,1,"joint cell spanning the columns Zionist Home, Blue & White, Unity, NEP (merger scenario / joint run)"

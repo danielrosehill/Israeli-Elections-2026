@@ -1,0 +1,6 @@
+URL: /he/pages/shama
+HEAD: שמע בראשות נפתלי גולדמן
+HEAD: רשימת המועמדים הוגשה מטעם מפלגת שמע
+HEAD: סוג: מידעיחידות: הבחירות לכנסת ה-26תאריך פרסום: 07.09.2026תאריך עדכון: 14.10.2026
+NOTE: single unnumbered candidate on the CEC page; position 1 assigned by build.py
+1|גולדמן נפתלי בורוך|
