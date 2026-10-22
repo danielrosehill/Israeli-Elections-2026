@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Knesset 2026 Forecast</title>
+<meta name="description" content="Two decision models forecast Israel's 27 October 2026 Knesset election from a frozen evidence pack, with and without prediction-market prices.">
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+<style>
+:root {
+  --bg: #fcfcfb; --surface: #ffffff; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: #e1e0d9; --accent: #2a78d6;
+  --clef: #2a78d6; --jev: #eb6834; --ref: #898781;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121211; --surface: #1b1b1a; --ink: #f2f1ec; --ink2: #b9b8b0; --muted: #8b8a83;
+    --grid: #2c2c2a; --axis: #45443f; --border: #2c2c2a; --accent: #5a9be6;
+    --clef: #5a9be6; --jev: #f08a5d; --ref: #9a998f;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121211; --surface: #1b1b1a; --ink: #f2f1ec; --ink2: #b9b8b0; --muted: #8b8a83;
+  --grid: #2c2c2a; --axis: #45443f; --border: #2c2c2a; --accent: #5a9be6;
+  --clef: #5a9be6; --jev: #f08a5d; --ref: #9a998f;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1040px; margin: 0 auto; padding: 24px 16px 64px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.01em; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+p { margin: 6px 0; }
+.lede { color: var(--ink2); max-width: 760px; }
+.meta { color: var(--muted); font-size: 0.85rem; }
+a { color: var(--accent); }
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0 8px; }
+@media (max-width: 640px) { .tiles { grid-template-columns: minmax(0, 1fr); } }
+.tile { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+.tile .k { color: var(--ink2); font-size: 0.82rem; }
+.tile .v { font-size: 1.05rem; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.tt { margin: 6px 0 4px; font-size: 0.9rem; } .tt td, .tt th { border: 0; padding: 2px 10px 2px 4px; white-space: nowrap; } .tt td:first-child { color: var(--ink2); padding-left: 0; } .tt b { font-size: 1.02rem; }
+.swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: baseline; }
+.tabs { display: flex; gap: 4px; flex-wrap: wrap; border-bottom: 1px solid var(--border); margin-top: 28px; }
+.tabs button { background: none; border: 0; border-bottom: 2px solid transparent; color: var(--ink2); padding: 10px 12px; font: inherit; cursor: pointer; }
+.tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.panel { display: none; padding-top: 16px; }
+.panel.on { display: block; }
+.controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 8px 0 12px; }
+select { min-width: 0; flex: 1 1 240px; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 7px 10px; max-width: 100%; }
+.qtext { font-size: 1.05rem; margin: 4px 0; }
+.res { color: var(--ink2); font-size: 0.88rem; }
+.chart { width: 100%; min-height: 360px; overflow: hidden; }
+html, body { overflow-x: hidden; }
+table { border-collapse: collapse; width: 100%; font-size: 0.88rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+th { color: var(--ink2); font-weight: 600; }
+td.n, th.n { text-align: right; }
+.scroll { overflow-x: auto; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; color: var(--ink2); font-size: 0.85rem; margin: 4px 0 0; }
+.hatch { background-image: repeating-linear-gradient(45deg, currentColor 0 2px, transparent 2px 5px); }
+footer { margin-top: 40px; color: var(--muted); font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Knesset 2026: a decision-model forecast</h1>
+  <p class="lede">Two decision models, Clef and Jev 1.14, answered 39 probability questions about Israel's 27 October 2026 election. Both read the same frozen evidence pack: the outgoing Knesset, the candidate lists, every poll since September and a news digest. Each answered twice, <b>without</b> and <b>with</b> Kalshi and Polymarket prices in the pack. No LLMs were involved.</p>
+  <p class="meta" id="meta"></p>
+
+  <div class="tiles" id="tiles"></div>
+  <div class="legend">
+    <span><span class="swatch" style="background:var(--clef)"></span>Clef</span>
+    <span><span class="swatch" style="background:var(--jev)"></span>Jev 1.14</span>
+    <span><span class="swatch" style="background:var(--ink2)"></span>solid = without markets</span>
+    <span><span class="swatch hatch" style="color:var(--ink2)"></span>hatched = with markets</span>
+    <span><span class="swatch" style="background:var(--ref);border-radius:50%"></span>market price / poll mean</span>
+  </div>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="questions">Questions</button>
+    <button role="tab" aria-selected="false" data-tab="seats">Seats</button>
+    <button role="tab" aria-selected="false" data-tab="consistency">Consistency</button>
+    <button role="tab" aria-selected="false" data-tab="method">Method and cost</button>
+  </div>
+
+  <section class="panel on" id="questions">
+    <div class="controls">
+      <label for="qsel" class="meta">Question</label>
+      <select id="qsel"></select>
+    </div>
+    <p class="qtext" id="qtext"></p>
+    <p class="res" id="qres"></p>
+    <div class="chart" id="qchart"></div>
+  </section>
+
+  <section class="panel" id="seats">
+    <p class="res">Expected seats (horizontal axis) from each model's full distribution, against the mean of late-campaign polls. Pick a list to see the whole distribution.</p>
+    <div class="chart" id="seatdots" style="min-height:600px"></div>
+    <div class="controls">
+      <label for="ssel" class="meta">Distribution for</label>
+      <select id="ssel"></select>
+    </div>
+    <div class="chart" id="seatdist"></div>
+  </section>
+
+  <section class="panel" id="consistency">
+    <p class="res">Some quantities were asked twice in different forms, for example "Will Yashar be the largest list?" as yes/no and as a pick from the lists. A coherent model gives the same number both times. The table shows the gap between the two answers.</p>
+    <div class="scroll"><table id="ctable"></table></div>
+  </section>
+
+  <section class="panel" id="method">
+    <p>Decision models take a block of evidence (the <i>state</i>) and typed questions (yes/no, one-of-N, ordered bins), and return probabilities. They are called through OpenRouter's <code>/api/v1/systemone</code> endpoint and billed only for input tokens. Every question in a request shares one billing of the state.</p>
+    <p>Clef's cheapest OpenRouter host silently truncates the state to 16,384 tokens, so this run pinned Clef to DeepInfra (64k context). The runner rejects any response billed at a context cap.</p>
+    <p>Every question's resolution rule was fixed before the run. Once the Central Elections Committee certifies the result (around 5 November 2026), each answer gets a Brier score, and so do the market prices.</p>
+    <h2>Requests</h2>
+    <div class="scroll"><table id="rtable"></table></div>
+    <h2>Links</h2>
+    <p><a href="https://github.com/danielrosehill/Israeli-Elections-2026">Repository</a> (code, question bank, evidence packs, raw answers) ·
+       <a href="https://github.com/danielrosehill/Israeli-Elections-2026/blob/main/experiment/runs/2026-10-22T1942Z/report/report.pdf">PDF report</a> ·
+       <a href="https://blog.danielrosehill.com/posts/knesset-2026-decision-model-forecast-aijs1i">Blog post</a></p>
+    <p>Datasets: <a href="https://huggingface.co/datasets/danielrosehill/Israel-Knesset-25-Members">25th Knesset</a> ·
+       <a href="https://huggingface.co/datasets/danielrosehill/Israel-Election-2026-Candidate-Lists">candidate lists</a> ·
+       <a href="https://huggingface.co/datasets/danielrosehill/Israel-Election-2026-Polls">polls</a></p>
+  </section>
+
+  <footer>By Daniel Rosehill. A forecast experiment, not advice. Market prices are a snapshot taken shortly before the run.</footer>
+</main>
+
+<script>
+const GROUPS = { result: "Headline result", blocs: "Blocs", seats: "Seats per list", threshold: "Electoral threshold", turnout: "Turnout", government: "Prime minister" };
+const MODELS = ["Clef", "Jev 1.14"];
+const CONDS = ["no_markets", "with_markets"];
+const CLABEL = { no_markets: "without markets", with_markets: "with markets" };
+let D, curQ, curS;
+
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const color = m => css(m === "Clef" ? "--clef" : "--jev");
+const pct = p => (p * 100).toFixed(p < 0.1 && p > 0 ? 1 : 0) + "%";
+
+function baseLayout(extra) {
+  return Object.assign({
+    paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)",
+    font: { family: "system-ui, sans-serif", color: css("--ink2"), size: 12 },
+    margin: { l: 10, r: 10, t: 10, b: 40 }, showlegend: false,
+    hoverlabel: { bgcolor: css("--surface"), bordercolor: css("--border"), font: { color: css("--ink") } },
+  }, extra);
+}
+const axis = extra => Object.assign({ gridcolor: css("--grid"), linecolor: css("--axis"), zeroline: false, automargin: true, tickfont: { color: css("--ink2") } }, extra);
+const CFG = { displayModeBar: false, responsive: true };
+const SHORT = { "Together (B'Yachad)": "Together", "United Torah Judaism": "UTJ", "Religious Zionist Party – Zehut": "RZP–Zehut",
+  "United Arab List (Ra'am)": "Ra'am", "The Reservists and the Economic Party": "Reservists–Economic", "Yisrael Beiteinu": "Yisrael Beiteinu" };
+const listName = q => { const n = q.text.replace("How many seats will ", "").replace(" win?", ""); return innerWidth < 640 ? (SHORT[n] || n) : n; };
+
+function tiles() {
+  const g = (id, m, c, o) => D.questions.find(q => q.id === id).answers[`${m}|${c}`][o];
+  const row = (label, id, o, mk) => {
+    const mv = D.questions.find(q => q.id === id).market;
+    const head = `<tr><td></td>${MODELS.map(m => `<th class="n"><span class="swatch" style="background:${color(m)}"></span>${m}</th>`).join("")}</tr>`;
+    const body = CONDS.map(c => `<tr><td>${CLABEL[c]}</td>${MODELS.map(m => `<td class="n"><b>${pct(g(id, m, c, o))}</b></td>`).join("")}</tr>`).join("");
+    const mtxt = mv && mv[mk || o] != null ? `<div class="meta">market ${pct(mv[mk || o])}</div>` : "";
+    return `<div class="tile"><div class="k">${label}</div><table class="tt">${head}${body}</table>${mtxt}</div>`;
+  };
+  document.getElementById("tiles").innerHTML =
+    row("Likud wins the most seats", "largest_list", "likud") +
+    row("Yashar wins the most seats", "largest_list", "yashar") +
+    row("Netanyahu is the next PM", "next_pm", "netanyahu") +
+    row("Eisenkot is the next PM", "next_pm", "eisenkot");
+}
+
+function fillSelect() {
+  const sel = document.getElementById("qsel");
+  for (const [g, label] of Object.entries(GROUPS)) {
+    const og = document.createElement("optgroup"); og.label = label;
+    D.questions.filter(q => q.group === g).forEach(q => { const o = new Option(q.text, q.id); og.appendChild(o); });
+    sel.appendChild(og);
+  }
+  sel.onchange = () => { curQ = sel.value; drawQuestion(); };
+  curQ = "largest_list"; sel.value = curQ;
+
+  const ss = document.getElementById("ssel");
+  D.questions.filter(q => q.group === "seats").forEach(q => ss.appendChild(new Option(q.text.replace("How many seats will ", "").replace(" win?", ""), q.id)));
+  ss.onchange = () => { curS = ss.value; drawSeatDist(); };
+  curS = ss.value;
+}
+
+function drawQuestion() {
+  const q = D.questions.find(x => x.id === curQ);
+  document.getElementById("qtext").textContent = q.text;
+  document.getElementById("qres").textContent = "Resolves: " + q.resolution;
+  let keys = Object.keys(q.options);
+  if (q.group === "seats") return drawSeatQuestion(q);
+  const labels = keys.map(k => q.options[k]);
+  const traces = [];
+  for (const m of MODELS) for (const c of CONDS) {
+    const a = q.answers[`${m}|${c}`];
+    traces.push({
+      type: "bar", orientation: "h", name: `${m}, ${CLABEL[c]}`, y: labels, x: keys.map(k => a[k] || 0),
+      marker: { color: color(m), line: { color: css("--bg"), width: 1 }, pattern: c === "with_markets" ? { shape: "/", bgcolor: color(m), fgcolor: css("--bg"), fillmode: "overlay", size: 7, solidity: 0.4 } : undefined },
+      hovertemplate: `<b>${m}</b>, ${CLABEL[c]}<br>%{y}: %{x:.1%}<extra></extra>`,
+    });
+  }
+  if (q.market) {
+    const mk = keys.filter(k => q.market[k] != null);
+    traces.push({ type: "scatter", mode: "markers", name: "Market", y: mk.map(k => q.options[k]), x: mk.map(k => q.market[k]),
+      marker: { symbol: "diamond", size: 12, color: css("--ref"), line: { color: css("--bg"), width: 2 } },
+      hovertemplate: "<b>Market</b><br>%{y}: %{x:.1%}<extra></extra>" });
+  }
+  const h = Math.max(300, labels.length * 80 + 60);
+  document.getElementById("qchart").style.height = h + "px";
+  Plotly.react("qchart", traces, baseLayout({
+    barmode: "group", bargap: 0.25, bargroupgap: 0.08,
+    xaxis: axis({ range: [0, 1], tickformat: ".0%", title: { text: "Probability", font: { size: 12 } } }),
+    yaxis: axis({ autorange: "reversed", gridcolor: "rgba(0,0,0,0)" }),
+  }), CFG);
+}
+
+function seatSeries(q, m, c) {
+  const a = q.answers[`${m}|${c}`];
+  const ks = Object.keys(q.options).map(Number).sort((x, y) => x - y);
+  return { x: ks, y: ks.map(k => a[String(k)] || 0) };
+}
+const expected = (q, m, c) => { const s = seatSeries(q, m, c); return s.x.reduce((t, k, i) => t + k * s.y[i], 0); };
+
+function drawSeatQuestion(q) { drawDist("qchart", q); }
+function drawSeatDist() { drawDist("seatdist", D.questions.find(x => x.id === curS)); }
+
+function drawDist(el, q) {
+  const traces = [];
+  for (const m of MODELS) for (const c of CONDS) {
+    const s = seatSeries(q, m, c);
+    traces.push({ type: "scatter", mode: "lines+markers", name: `${m}, ${CLABEL[c]}`, x: s.x, y: s.y,
+      line: { color: color(m), width: 2, dash: c === "with_markets" ? "dot" : "solid" },
+      marker: { size: 7, color: c === "with_markets" ? css("--bg") : color(m), line: { color: color(m), width: 2 } },
+      hovertemplate: `<b>${m}</b>, ${CLABEL[c]}<br>%{x} seats: %{y:.1%}<extra></extra>` });
+  }
+  const shapes = [], ann = [];
+  if (q.poll_mean != null) {
+    shapes.push({ type: "line", x0: q.poll_mean, x1: q.poll_mean, yref: "paper", y0: 0, y1: 1, line: { color: css("--ref"), width: 2, dash: "dash" } });
+    ann.push({ x: q.poll_mean, yref: "paper", y: 1, text: `poll mean ${q.poll_mean}`, showarrow: false, yanchor: "bottom", font: { color: css("--ink2"), size: 11 } });
+  }
+  document.getElementById(el).style.height = "380px";
+  Plotly.react(el, traces, baseLayout({ shapes, annotations: ann, margin: { l: 10, r: 10, t: 24, b: 40 },
+    xaxis: axis({ title: { text: "Seats (0 = below the threshold; top value means that many or more)", font: { size: 12 } }, dtick: 2 }),
+    yaxis: axis({ tickformat: ".0%", rangemode: "tozero" }) }), CFG);
+}
+
+function drawSeatDots() {
+  const qs = D.questions.filter(q => q.group === "seats");
+  const names = qs.map(listName);
+  const traces = [{ type: "scatter", mode: "markers", name: "Poll mean", y: names, x: qs.map(q => q.poll_mean),
+    marker: { symbol: "diamond", size: 11, color: css("--ref") }, hovertemplate: "<b>Poll mean</b><br>%{y}: %{x:.1f}<extra></extra>" }];
+  for (const m of MODELS) for (const c of CONDS) {
+    traces.push({ type: "scatter", mode: "markers", name: `${m}, ${CLABEL[c]}`, y: names, x: qs.map(q => expected(q, m, c)),
+      marker: { size: 11, color: c === "with_markets" ? css("--bg") : color(m), line: { color: color(m), width: 2.5 } },
+      hovertemplate: `<b>${m}</b>, ${CLABEL[c]}<br>%{y}: %{x:.1f} seats<extra></extra>` });
+  }
+  Plotly.react("seatdots", traces, baseLayout({ height: 600, showlegend: true,
+    legend: { orientation: "h", x: 0, xanchor: "left", y: 1.01, yanchor: "bottom", font: { color: css("--ink2") } },
+    margin: { l: 10, r: 10, t: innerWidth < 640 ? 110 : 40, b: 30 },
+    xaxis: axis({ rangemode: "tozero" }),
+    yaxis: axis({ autorange: "reversed", gridcolor: "rgba(0,0,0,0)" }) }), CFG);
+  document.getElementById("seatdots").on("plotly_click", e => {
+    const i = e.points[0].pointIndex; curS = qs[i].id; document.getElementById("ssel").value = curS; drawSeatDist();
+  });
+}
+
+function tables() {
+  const cols = MODELS.flatMap(m => CONDS.map(c => [m, c]));
+  let h = `<tr><th>Check</th>${cols.map(([m, c]) => `<th class="n"><span class="swatch" style="background:${color(m)}"></span>${m}<br><span class="meta">${CLABEL[c]}</span></th>`).join("")}</tr>`;
+  for (const r of D.consistency) h += `<tr><td>${r.check}</td>${cols.map(([m, c]) => `<td class="n" title="${r[`${m} ${c} a`]} vs ${r[`${m} ${c} b`]}">${(+r[`${m} ${c} gap`]).toFixed(2)}</td>`).join("")}</tr>`;
+  const mean = ([m, c]) => D.consistency.reduce((t, r) => t + +r[`${m} ${c} gap`], 0) / D.consistency.length;
+  h += `<tr><th>Mean gap</th>${cols.map(k => `<th class="n">${mean(k).toFixed(2)}</th>`).join("")}</tr>`;
+  document.getElementById("ctable").innerHTML = h;
+  let r = `<tr><th>Model</th><th>Condition</th><th>Provider</th><th class="n">Input tokens</th><th class="n">Cost (USD)</th></tr>`;
+  for (const q of D.requests) r += `<tr><td>${q.model}</td><td>${CLABEL[q.condition]}</td><td>${q.provider}</td><td class="n">${q.input_tokens.toLocaleString()}</td><td class="n">${q.cost_usd.toFixed(5)}</td></tr>`;
+  r += `<tr><th colspan="4">Total</th><th class="n">${D.cost_usd.toFixed(5)}</th></tr>`;
+  document.getElementById("rtable").innerHTML = r;
+}
+
+const visible = id => document.getElementById(id).classList.contains("on");
+function drawCharts() {
+  if (visible("questions")) drawQuestion();
+  if (visible("seats")) { drawSeatDots(); drawSeatDist(); }
+}
+function drawAll() { tiles(); tables(); drawCharts(); }
+
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
+  document.querySelectorAll(".panel").forEach(p => p.classList.toggle("on", p.id === b.dataset.tab));
+  if (D) drawCharts();
+  history.replaceState(null, "", "#" + b.dataset.tab);
+});
+function showTab(name) {
+  const b = document.querySelector(`.tabs button[data-tab="${name}"]`); if (b) b.click();
+}
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => D && drawAll());
+
+fetch("data.json").then(r => r.json()).then(d => {
+  D = d;
+  document.getElementById("meta").textContent =
+    `Run ${d.run} · frozen ${d.frozen.slice(0, 16).replace("T", " ")} UTC · markets snapshot ${d.market_snapshot.slice(0, 16).replace("T", " ")} UTC · ${d.poll_window.polls} polls since ${d.poll_window.since} in the poll mean · total cost $${d.cost_usd.toFixed(4)}`;
+  fillSelect(); drawAll();
+  if (location.hash) showTab(location.hash.slice(1));
+});
+</script>
+</body>
+</html>

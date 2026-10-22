@@ -16,12 +16,13 @@ Run every step from the repo root.
 | 6. Run | `with-secrets uv run --with httpx python3 -I experiment/run.py <run_dir>` | `answers/<model>__<condition>.json`, `answers/summary.json` |
 | 7. Analysis | `uv run --with matplotlib python3 -I experiment/analyse.py <run_dir>` | `analysis/*.csv`, `analysis/fig_*.png`, `analysis/summary.json` |
 | 8. Report | `uv run --with markdown --with weasyprint python3 -I experiment/render_report.py <run_dir>` | `report/report.pdf` (written from `report/report.md`) |
+| 9. Space | `with-secrets uv run --with huggingface_hub --with matplotlib python3 -I experiment/build_space.py <run_dir> --push` | `space/data.json`, uploaded with `space/index.html` to [the HF Space](https://huggingface.co/spaces/danielrosehill/Israel-Election-2026-Forecast) (static SDK) |
 
 ## Runs
 
 | Run | Frozen | Report | Cost |
 |---|---|---|---|
-| `runs/2026-10-22T1942Z` | 22 Oct 2026, 19:42 UTC | [report.pdf](runs/2026-10-22T1942Z/report/report.pdf), [report.md](runs/2026-10-22T1942Z/report/report.md) | $0.0159 |
+| `runs/2026-10-22T1942Z` | 22 Oct 2026, 19:42 UTC | [report.pdf](runs/2026-10-22T1942Z/report/report.pdf), [report.md](runs/2026-10-22T1942Z/report/report.md), [Space](https://huggingface.co/spaces/danielrosehill/Israel-Election-2026-Forecast) | $0.0159 |
 
 ## System One API gotchas (verified 2026-10-22)
 
@@ -42,3 +43,10 @@ Every question in `questions.json` carries `resolution`, `resolves_by` and `mirr
 1. read the final CEC results;
 2. resolve each question;
 3. compute Brier scores per model × condition, and for the mirrored market prices from the same snapshot.
+
+## Space notes (verified 2026-10-22)
+
+- Plotly 2.35.2 is **not** on cdnjs (404), so `space/index.html` loads it from jsDelivr (`plotly.js-dist-min@2.35.2`).
+- Charts on a hidden tab are drawn only once the tab is shown. Otherwise Plotly measures a hidden container and renders at the wrong width.
+- Creating the Space with `create_repo(space_sdk="static")` adds a template `style.css`. It was deleted after the first push.
+- Headless Chrome won't lay out narrower than 500px, so a 390px screenshot crops the page. Don't mistake that for a layout bug.
