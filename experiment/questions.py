@@ -40,21 +40,15 @@ KALSHI_COUNT = {
     "Together (B'Yachad)": "KXTOGETHERCOUNT-26OCT27", "The Democrats": "KXISRDEMCOUNT-26OCT27",
     "Shas": "KXSHASCOUNT-26OCT27", "Yisrael Beiteinu": "KXBEITEINUCOUNT-26OCT27",
 }
-THRESHOLD_LISTS = [
+THRESHOLD_LISTS = [  # lists whose entry is in doubt, plus the next-nearest fringe lists
     "The Reservists and the Economic Party", "Amcha Yisrael", "Religious Zionist Party – Zehut",
-    "United Arab List (Ra'am)", "Yisrael Beiteinu", "Joint List", "The Democrats", "Otzma Yehudit",
-    "United Torah Judaism", "Shas", "Noam", "Israel First", "Haredi Public",
-    "Tzomet – Beit Yisrael", "Partnership for Everyone (Ihud Bnei HaBrit)",
+    "United Arab List (Ra'am)", "Yisrael Beiteinu", "Joint List", "Noam", "Israel First", "Haredi Public",
 ]
 PM_OPTIONS = {
     "netanyahu": "Benjamin Netanyahu (Likud)", "eisenkot": "Gadi Eisenkot (Yashar)",
     "bennett": "Naftali Bennett (Together)", "lieberman": "Avigdor Lieberman (Yisrael Beiteinu)",
     "other": "Someone else",
 }
-COALITION_LISTS = ["Likud", "Yashar", "Together (B'Yachad)", "The Democrats", "Yisrael Beiteinu",
-                   "Shas", "United Torah Judaism", "Otzma Yehudit", "Religious Zionist Party – Zehut",
-                   "United Arab List (Ra'am)", "The Reservists and the Economic Party", "Amcha Yisrael"]
-
 
 def slug(name):
     return "".join(c if c.isalnum() else "_" for c in name.lower()).strip("_").replace("__", "_")
@@ -143,7 +137,7 @@ q("votes_cast", "turnout", "score", "How many votes will be cast in total?",
   ["under 4.9 million", "4.9-5.1 million", "5.1-5.2 million", "5.2-5.3 million",
    "5.3-5.4 million", "5.4-5.5 million", "5.5 million or more"], ["kalshi:KXISRAELTURNOUT-26OCT27"])
 
-# 6. Government formation ------------------------------------------------------
+# 6. Prime minister ------------------------------------------------------
 q("next_pm", "government", "choice",
   "Who will be prime minister of the first government sworn in after this election?",
   f"Prime minister of the first government that wins a Knesset confidence vote after 27 Oct 2026. Resolves 'other' if none by {GOVT}.",
@@ -154,62 +148,9 @@ q("netanyahu_remains_pm", "government", "noul",
 q("eisenkot_pm", "government", "noul",
   "Will Gadi Eisenkot be prime minister of the first government formed after this election?",
   "Same resolution as next_pm == eisenkot. Consistency pair with next_pm.", GOVT)
-q("first_mandate", "government", "choice",
-  "Whom will President Herzog task first with forming a government?",
-  "The first Knesset member the president tasks with forming a government after this election.", "2026-11-20",
-  {"netanyahu": "Benjamin Netanyahu", "eisenkot": "Gadi Eisenkot", "bennett": "Naftali Bennett", "other": "Someone else"})
-q("govt_by_2026_12_31", "government", "noul",
-  "Will a new government be sworn in by 31 December 2026?",
-  "A government wins a Knesset confidence vote on or before 2026-12-31.", "2026-12-31")
-q("another_election_called", "government", "noul",
-  "Will the 26th Knesset dissolve, triggering another election, before any government is formed?",
-  "The Knesset dissolves or an election is set by law before any government wins a confidence vote.", GOVT,
-  mirrors=["kalshi:KXISRKNESSETCOUNT"])
-for name in COALITION_LISTS:
-    q(f"in_govt_{slug(name)}", "coalition", "noul",
-      f"Will {name} be part of the first government formed after this election?",
-      f"At least one {name} Knesset member holds a ministerial post in that government on swearing-in.", GOVT,
-      mirrors=["kalshi:KXISRAELGOVT-28JAN01"])
-q("likud_yashar_unity", "coalition", "noul",
-  "Will Likud and Yashar both be in the first government formed after this election?",
-  "Both in_govt_likud and in_govt_yashar resolve true.", GOVT)
-q("haredi_in_opposition", "coalition", "noul",
-  "Will both Shas and United Torah Judaism be outside the first government formed after this election?",
-  "Neither list holds a ministerial post at swearing-in.", GOVT)
-q("arab_party_supports_govt", "coalition", "noul",
-  "Will Ra'am or the Joint List join or formally support the first government formed after this election?",
-  "Holds a ministerial post, or signs a published coalition or confidence-and-supply agreement, by swearing-in.", GOVT)
-q("ben_gvir_minister", "coalition", "noul", "Will Itamar Ben-Gvir be a minister in the first government formed after this election?",
-  "Ben-Gvir holds any ministerial post at swearing-in.", GOVT)
-q("smotrich_finance", "coalition", "noul", "Will Bezalel Smotrich be finance minister in the first government formed after this election?",
-  "Smotrich is finance minister at swearing-in.", GOVT)
-q("coalition_size", "coalition", "score", "How many Knesset seats will the first government formed after this election command?",
-  "Seats held by the lists in the government at its confidence vote, binned.", GOVT,
-  ["fewer than 61 (minority government)", "61-63", "64-67", "68-74", "75 or more"])
-
-# 7. Repercussions -------------------------------------------------------------
-q("oct7_state_commission", "repercussions", "noul",
-  "Will the government establish a state commission of inquiry into the 7 October 2023 attack by 30 June 2027?",
-  "A state commission of inquiry under the Commissions of Inquiry Law, 1968, is established by government decision on or before 2027-06-30.", "2027-06-30")
-q("haredi_draft_law", "repercussions", "noul",
-  "Will the Knesset pass a law on conscription of Haredi yeshiva students by 30 June 2027?",
-  "A law setting the military or national-service obligations of yeshiva students passes its third reading on or before 2027-06-30.", "2027-06-30")
-q("netanyahu_pardon", "repercussions", "noul",
-  "Will Benjamin Netanyahu receive a presidential pardon, or end his criminal trial through a plea deal, by 30 June 2027?",
-  "A pardon is granted or a plea agreement is approved by the court on or before 2027-06-30.", "2027-06-30")
-q("netanyahu_likud_leader_2027", "repercussions", "noul",
-  "Will Benjamin Netanyahu still be Likud chairman on 30 June 2027?",
-  "Netanyahu holds the Likud chairmanship on 2027-06-30.", "2027-06-30")
-q("netanyahu_pm_mid_2027", "repercussions", "noul",
-  "Will Benjamin Netanyahu be prime minister, including as caretaker, on 30 June 2027?",
-  "Netanyahu holds the office of prime minister on 2027-06-30, whether in a new government or a transitional one.", "2027-06-30")
-q("saudi_normalisation", "repercussions", "noul",
-  "Will Israel and Saudi Arabia sign a normalisation agreement by 31 December 2027?",
-  "Both governments sign a formal agreement establishing diplomatic relations on or before 2027-12-31.", "2027-12-31",
-  mirrors=["kalshi:KXABRAHAMSA-29"])
 
 bank = {
-    "version": 1,
+    "version": 2,  # v2 2026-10-22: election-only scope; coalition and repercussion questions dropped
     "frozen": None,  # set to the UTC timestamp when the forecast run uses this bank
     "definitions": {
         "netanyahu_bloc": NETANYAHU_BLOC, "opposition_zionist": OPPOSITION_ZIONIST, "arab_lists": ARAB_LISTS,
