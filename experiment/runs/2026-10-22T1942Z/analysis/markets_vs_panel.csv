@@ -1,0 +1,10 @@
+question,option,market,Clef no_markets,Clef with_markets,Jev 1.14 no_markets,Jev 1.14 with_markets
+largest_list,yashar,0.695,0.183,0.728,0.12,0.96
+largest_list,likud,0.295,0.632,0.108,0.87,0.04
+next_pm,eisenkot,0.4855,0.097,0.551,0.11,0.73
+next_pm,netanyahu,0.305,0.81,0.364,0.49,0.21
+next_pm,bennett,0.155,0.047,0.048,0.02,0.01
+bloc_most_seats,opposition,0.54,0.332,0.537,0.52,0.74
+no_bloc_majority,true,0.36,0.818,0.804,0.56,0.52
+second_list,likud,0.665,0.239,0.801,0.07,0.8
+third_list,together,0.86,0.258,0.746,0.49,0.91

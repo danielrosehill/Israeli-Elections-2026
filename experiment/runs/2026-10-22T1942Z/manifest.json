@@ -1,0 +1,28 @@
+{
+  "built_utc": "2026-10-22T19:42:54+00:00",
+  "polls_since": "2026-09-01",
+  "inputs": {
+    "data/knesset-25/parties.csv": "66905b0dc84df60add3ab55bf4da78b37b14542a2ab19b3be06116751b4f481d",
+    "data/candidate-lists/parties.csv": "b14a9353f0583e37a69002c46e0ba7a24cbe6dc53d96c5100d4f66f8dd538be4",
+    "data/candidate-lists/candidates.csv": "62226732c504e70b955585f5c58e676c5a64f8ff2ba661b4b758c65846d18d99",
+    "data/polls/polls.csv": "1a245527ac3070dd4917a25acca5bad365bcf933cb7475047c28eabd04b1f94a",
+    "data/polls/poll_results.csv": "8a4c239cb922a1ad02bf72ccf669d8f04c467f0f70572e3a88f98d7812b8c232",
+    "data/markets/latest.csv": "c960fb86df1b75d1ad613f8009cb120bc5dc576a1b1c36e54047d5ab932c0c98",
+    "experiment/evidence/news.md": "bc1a9820567c3b9e1a5f0b241a9c28bb7842c603aaf0f23370530ad45bf14663",
+    "experiment/questions.json": "d7656d3dee2794bd5c99d534fc0544cf52a6b35f643071b80c56fc37f40c800d"
+  },
+  "outputs": {
+    "state_no_markets.md": {
+      "chars": 50030,
+      "sha256": "9dba66527ba039ba635e9494ef6fb7b7bbc6b6d44e0f4dccdd98d54e040e72db"
+    },
+    "state_with_markets.md": {
+      "chars": 53552,
+      "sha256": "1d72cdfca38121fa1b183f3e93a7946094c2b292dc49c7cd3706e078ac24a8da"
+    },
+    "questions.json": {
+      "chars": 23549,
+      "sha256": "1d8f3e58f0cf921bc3e652dc01ea0143412405b3eb11867d6801ebf5e5c5d7fd"
+    }
+  }
+}

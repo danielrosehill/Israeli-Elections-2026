@@ -1,0 +1,13 @@
+check,Clef no_markets a,Clef no_markets b,Clef no_markets gap,Clef with_markets a,Clef with_markets b,Clef with_markets gap,Jev 1.14 no_markets a,Jev 1.14 no_markets b,Jev 1.14 no_markets gap,Jev 1.14 with_markets a,Jev 1.14 with_markets b,Jev 1.14 with_markets gap
+Yashar largest: yes/no vs choice,0.247,0.183,0.064,0.878,0.728,0.15,0.39,0.12,0.27,0.63,0.96,0.33
+Netanyahu next PM: yes/no vs choice,0.724,0.81,0.086,0.341,0.364,0.023,0.55,0.49,0.06,0.39,0.21,0.18
+Eisenkot next PM: yes/no vs choice,0.141,0.097,0.044,0.751,0.551,0.2,0.27,0.11,0.16,0.43,0.73,0.3
+Likud under 32: yes/no vs seats,0.932,0.962,0.03,0.965,0.978,0.013,0.78,0.95,0.17,0.79,0.99,0.2
+Netanyahu bloc 61+: yes/no vs bloc-seat bins,0.311,0.135,0.176,0.328,0.088,0.24,0.54,0.82,0.28,0.54,0.76,0.22
+Hung parliament vs 1 - P(either bloc 61+),0.818,0.58,0.237,0.804,0.542,0.262,0.56,0.0,0.56,0.52,0.0,0.52
+Reservists passes: yes/no vs seats,0.304,0.317,0.012,0.332,0.348,0.016,0.38,0.55,0.17,0.38,0.6,0.22
+Amcha Yisrael passes: yes/no vs seats,0.118,0.223,0.104,0.091,0.189,0.098,0.27,0.13,0.14,0.24,0.11,0.13
+RZP–Zehut passes: yes/no vs seats,0.909,0.962,0.053,0.912,0.957,0.045,0.89,1,0.11,0.81,0.95,0.14
+Ra'am passes: yes/no vs seats,0.88,0.865,0.016,0.954,0.91,0.044,0.83,0.99,0.16,0.87,0.99,0.12
+Yisrael Beiteinu passes: yes/no vs seats,0.817,0.902,0.085,0.894,0.964,0.07,0.91,1,0.09,0.92,1,0.08
+Joint List passes: yes/no vs seats,0.929,0.958,0.029,0.963,0.971,0.009,0.89,1,0.11,0.91,1,0.09

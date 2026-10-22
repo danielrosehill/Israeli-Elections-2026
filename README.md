@@ -39,4 +39,4 @@ Verified 2026-10-22.
 
 ## Experiment
 
-The panel is `cloudflare/clef` (Cloudflare's post-train of Qwen 3.8 27B) and `typesafe/jev-1.14` (TypeSafe's closed model). Each answers the same question bank twice from the same evidence pack: once with the market prices included and once without. Questions mirror the Kalshi and Polymarket markets where possible, so every answer can be scored with a Brier score against the result and compared with the markets. The code and frozen inputs will live in `experiment/`.
+The panel is `cloudflare/clef` (Cloudflare's post-train of Qwen 3.8 27B) and `typesafe/jev-1.14` (TypeSafe's closed model). Each answers the same question bank twice from the same evidence pack: once with the market prices included and once without. Questions mirror the Kalshi and Polymarket markets where possible, so every answer can be scored with a Brier score against the result and compared with the markets. Code, frozen inputs, answers and reports are in `experiment/`; see [experiment/README.md](experiment/README.md). First run (22 Oct 2026): [report](experiment/runs/2026-10-22T1942Z/report/report.pdf).

@@ -1,0 +1,702 @@
+{
+  "version": 2,
+  "frozen": "2026-10-22T19:42:54+00:00",
+  "definitions": {
+    "netanyahu_bloc": [
+      "Likud",
+      "Shas",
+      "United Torah Judaism",
+      "Otzma Yehudit",
+      "Religious Zionist Party – Zehut",
+      "Noam"
+    ],
+    "opposition_zionist": [
+      "Yashar",
+      "Together (B'Yachad)",
+      "The Democrats",
+      "Yisrael Beiteinu",
+      "The Reservists and the Economic Party",
+      "Amcha Yisrael"
+    ],
+    "arab_lists": [
+      "Joint List",
+      "United Arab List (Ra'am)"
+    ],
+    "final_results": "Final CEC results for the 26th Knesset (votes26), as certified."
+  },
+  "questions": {
+    "largest_list": {
+      "group": "result",
+      "type": "choice",
+      "instructions": "Which list will win the most seats in the 26th Knesset?",
+      "criteria": {
+        "likud": "Likud",
+        "yashar": "Yashar",
+        "together": "Together (B'Yachad)",
+        "other": "Any other list"
+      },
+      "resolution": "List with the most seats in the final CEC results. A tie is broken by valid votes.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELKNESSET-26",
+        "polymarket:israeli-legislative-election-winner"
+      ]
+    },
+    "yashar_largest": {
+      "group": "result",
+      "type": "noul",
+      "instructions": "Will Yashar win more seats than any other list?",
+      "resolution": "Same resolution as largest_list. Consistency pair with largest_list.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "second_list": {
+      "group": "result",
+      "type": "choice",
+      "instructions": "Which list will come second in seats?",
+      "criteria": {
+        "likud": "Likud",
+        "yashar": "Yashar",
+        "together": "Together (B'Yachad)",
+        "other": "Any other list"
+      },
+      "resolution": "Second-largest list by seats, ties broken by valid votes.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAEL2ND-26OCT27-2"
+      ]
+    },
+    "third_list": {
+      "group": "result",
+      "type": "choice",
+      "instructions": "Which list will come third in seats?",
+      "criteria": {
+        "together": "Together (B'Yachad)",
+        "democrats": "The Democrats",
+        "shas": "Shas",
+        "otzma": "Otzma Yehudit",
+        "likud_or_yashar": "Likud or Yashar",
+        "other": "Any other list"
+      },
+      "resolution": "Third-largest list by seats, ties broken by valid votes.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAEL3RD-26OCT27-3"
+      ]
+    },
+    "likud_below_32": {
+      "group": "result",
+      "type": "noul",
+      "instructions": "Will Likud win fewer than 32 seats, its 2022 total?",
+      "resolution": "Likud seats in the final CEC results are 31 or fewer. Consistency pair with seats_likud.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "polymarket:israel-election-will-likud-lose-seats"
+      ]
+    },
+    "netanyahu_bloc_61": {
+      "group": "blocs",
+      "type": "noul",
+      "instructions": "Will the Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam) win 61 or more seats combined?",
+      "resolution": "Sum of seats for Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam in the final CEC results is at least 61.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELBLOCMAJ-26OCT27"
+      ]
+    },
+    "opposition_zionist_61": {
+      "group": "blocs",
+      "type": "noul",
+      "instructions": "Will the Zionist opposition lists (Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael) win 61 or more seats combined, without the Arab lists?",
+      "resolution": "Sum of seats for Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael is at least 61.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELBLOCMAJ-26OCT27"
+      ]
+    },
+    "no_bloc_majority": {
+      "group": "blocs",
+      "type": "noul",
+      "instructions": "Will neither the Netanyahu bloc nor the Zionist opposition reach 61 seats on its own?",
+      "resolution": "Both netanyahu_bloc_61 and opposition_zionist_61 resolve false.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELBLOCMAJ-26OCT27",
+        "polymarket:israeli-election-results-in-a-hung-parliament"
+      ]
+    },
+    "bloc_most_seats": {
+      "group": "blocs",
+      "type": "choice",
+      "instructions": "Which bloc will win more seats?",
+      "criteria": {
+        "netanyahu": "Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam)",
+        "opposition": "Zionist opposition (Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael)"
+      },
+      "resolution": "Compare the Netanyahu bloc's seats with the Zionist opposition's seats, as defined above.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELBLOCMOST-26OCT27"
+      ]
+    },
+    "netanyahu_bloc_seats": {
+      "group": "blocs",
+      "type": "score",
+      "instructions": "How many seats will the Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam) win combined?",
+      "criteria": [
+        "50 or fewer",
+        "51-54",
+        "55-57",
+        "58-60",
+        "61-63",
+        "64 or more"
+      ],
+      "resolution": "Sum of the bloc's seats, binned. Consistency check against the per-list seat questions.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_likud": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Likud win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 seats",
+        "17": "17 seats",
+        "18": "18 seats",
+        "19": "19 seats",
+        "20": "20 seats",
+        "21": "21 seats",
+        "22": "22 seats",
+        "23": "23 seats",
+        "24": "24 seats",
+        "25": "25 seats",
+        "26": "26 seats",
+        "27": "27 seats",
+        "28": "28 seats",
+        "29": "29 seats",
+        "30": "30 seats",
+        "31": "31 seats",
+        "32": "32 seats",
+        "33": "33 seats",
+        "34": "34 seats",
+        "35": "35 seats",
+        "36": "36 seats",
+        "37": "37 seats",
+        "38": "38 seats",
+        "39": "39 seats",
+        "40": "40 or more seats"
+      },
+      "resolution": "Seats for Likud in the final CEC results. The option key is the seat count; key 40 means 40 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXLIKUDCOUNT-26OCT27",
+        "polymarket:israel-election-likud-of-seats"
+      ]
+    },
+    "seats_yashar": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Yashar win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 seats",
+        "17": "17 seats",
+        "18": "18 seats",
+        "19": "19 seats",
+        "20": "20 seats",
+        "21": "21 seats",
+        "22": "22 seats",
+        "23": "23 seats",
+        "24": "24 seats",
+        "25": "25 seats",
+        "26": "26 seats",
+        "27": "27 seats",
+        "28": "28 seats",
+        "29": "29 seats",
+        "30": "30 seats",
+        "31": "31 seats",
+        "32": "32 seats",
+        "33": "33 seats",
+        "34": "34 seats",
+        "35": "35 seats",
+        "36": "36 seats",
+        "37": "37 seats",
+        "38": "38 seats",
+        "39": "39 seats",
+        "40": "40 or more seats"
+      },
+      "resolution": "Seats for Yashar in the final CEC results. The option key is the seat count; key 40 means 40 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXYASHARCOUNT-26OCT27"
+      ]
+    },
+    "seats_together_b_yachad": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Together (B'Yachad) win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 seats",
+        "17": "17 seats",
+        "18": "18 seats",
+        "19": "19 seats",
+        "20": "20 seats",
+        "21": "21 seats",
+        "22": "22 seats",
+        "23": "23 seats",
+        "24": "24 seats",
+        "25": "25 or more seats"
+      },
+      "resolution": "Seats for Together (B'Yachad) in the final CEC results. The option key is the seat count; key 25 means 25 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXTOGETHERCOUNT-26OCT27"
+      ]
+    },
+    "seats_the_democrats": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will The Democrats win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 seats",
+        "17": "17 seats",
+        "18": "18 seats",
+        "19": "19 seats",
+        "20": "20 or more seats"
+      },
+      "resolution": "Seats for The Democrats in the final CEC results. The option key is the seat count; key 20 means 20 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRDEMCOUNT-26OCT27"
+      ]
+    },
+    "seats_shas": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Shas win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 or more seats"
+      },
+      "resolution": "Seats for Shas in the final CEC results. The option key is the seat count; key 16 means 16 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXSHASCOUNT-26OCT27"
+      ]
+    },
+    "seats_united_torah_judaism": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will United Torah Judaism win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 or more seats"
+      },
+      "resolution": "Seats for United Torah Judaism in the final CEC results. The option key is the seat count; key 14 means 14 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_otzma_yehudit": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Otzma Yehudit win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 or more seats"
+      },
+      "resolution": "Seats for Otzma Yehudit in the final CEC results. The option key is the seat count; key 16 means 16 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_yisrael_beiteinu": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Yisrael Beiteinu win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 seats",
+        "15": "15 seats",
+        "16": "16 or more seats"
+      },
+      "resolution": "Seats for Yisrael Beiteinu in the final CEC results. The option key is the seat count; key 16 means 16 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXBEITEINUCOUNT-26OCT27"
+      ]
+    },
+    "seats_religious_zionist_party__zehut": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Religious Zionist Party – Zehut win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 or more seats"
+      },
+      "resolution": "Seats for Religious Zionist Party – Zehut in the final CEC results. The option key is the seat count; key 14 means 14 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_joint_list": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Joint List win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 seats",
+        "13": "13 seats",
+        "14": "14 or more seats"
+      },
+      "resolution": "Seats for Joint List in the final CEC results. The option key is the seat count; key 14 means 14 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_united_arab_list_ra_am": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will United Arab List (Ra'am) win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 or more seats"
+      },
+      "resolution": "Seats for United Arab List (Ra'am) in the final CEC results. The option key is the seat count; key 12 means 12 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_the_reservists_and_the_economic_party": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will The Reservists and the Economic Party win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 or more seats"
+      },
+      "resolution": "Seats for The Reservists and the Economic Party in the final CEC results. The option key is the seat count; key 12 means 12 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "seats_amcha_yisrael": {
+      "group": "seats",
+      "type": "choice",
+      "instructions": "How many seats will Amcha Yisrael win?",
+      "criteria": {
+        "0": "0 seats (below the threshold)",
+        "4": "4 seats",
+        "5": "5 seats",
+        "6": "6 seats",
+        "7": "7 seats",
+        "8": "8 seats",
+        "9": "9 seats",
+        "10": "10 seats",
+        "11": "11 seats",
+        "12": "12 or more seats"
+      },
+      "resolution": "Seats for Amcha Yisrael in the final CEC results. The option key is the seat count; key 12 means 12 or more.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "passes_the_reservists_and_the_economic_party": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will The Reservists and the Economic Party pass the 3.25% electoral threshold and win seats?",
+      "resolution": "The Reservists and the Economic Party wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_amcha_yisrael": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Amcha Yisrael pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Amcha Yisrael wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_religious_zionist_party__zehut": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Religious Zionist Party – Zehut pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Religious Zionist Party – Zehut wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_united_arab_list_ra_am": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will United Arab List (Ra'am) pass the 3.25% electoral threshold and win seats?",
+      "resolution": "United Arab List (Ra'am) wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_yisrael_beiteinu": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Yisrael Beiteinu pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Yisrael Beiteinu wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_joint_list": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Joint List pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Joint List wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_noam": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Noam pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Noam wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_israel_first": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Israel First pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Israel First wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "passes_haredi_public": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will Haredi Public pass the 3.25% electoral threshold and win seats?",
+      "resolution": "Haredi Public wins at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELANYSEAT-26OCT27"
+      ]
+    },
+    "lists_passing": {
+      "group": "threshold",
+      "type": "score",
+      "instructions": "How many lists will pass the electoral threshold?",
+      "criteria": [
+        "9 or fewer",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14 or more"
+      ],
+      "resolution": "Number of lists with at least one seat in the final CEC results.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "reservists_and_amcha_both_fail": {
+      "group": "threshold",
+      "type": "noul",
+      "instructions": "Will both The Reservists and the Economic Party and Amcha Yisrael fail to pass the threshold?",
+      "resolution": "Both lists win 0 seats. Consistency check against their passes_ questions.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "turnout_below_2022": {
+      "group": "turnout",
+      "type": "noul",
+      "instructions": "Will turnout be lower than in the 2022 election (70.6% of eligible voters)?",
+      "resolution": "Official CEC turnout percentage is below 70.63.",
+      "resolves_by": "2026-11-05",
+      "mirrors": []
+    },
+    "votes_cast": {
+      "group": "turnout",
+      "type": "score",
+      "instructions": "How many votes will be cast in total?",
+      "criteria": [
+        "under 4.9 million",
+        "4.9-5.1 million",
+        "5.1-5.2 million",
+        "5.2-5.3 million",
+        "5.3-5.4 million",
+        "5.4-5.5 million",
+        "5.5 million or more"
+      ],
+      "resolution": "Total votes cast (CEC), binned.",
+      "resolves_by": "2026-11-05",
+      "mirrors": [
+        "kalshi:KXISRAELTURNOUT-26OCT27"
+      ]
+    },
+    "next_pm": {
+      "group": "government",
+      "type": "choice",
+      "instructions": "Who will be prime minister of the first government sworn in after this election?",
+      "criteria": {
+        "netanyahu": "Benjamin Netanyahu (Likud)",
+        "eisenkot": "Gadi Eisenkot (Yashar)",
+        "bennett": "Naftali Bennett (Together)",
+        "lieberman": "Avigdor Lieberman (Yisrael Beiteinu)",
+        "other": "Someone else"
+      },
+      "resolution": "Prime minister of the first government that wins a Knesset confidence vote after 27 Oct 2026. Resolves 'other' if none by 2027-02-28.",
+      "resolves_by": "2027-02-28",
+      "mirrors": [
+        "kalshi:KXISRAELPM-26OCT27",
+        "polymarket:who-will-be-the-next-prime-minister-of-israel-after-the-next-election"
+      ]
+    },
+    "netanyahu_remains_pm": {
+      "group": "government",
+      "type": "noul",
+      "instructions": "Will Benjamin Netanyahu be prime minister of the first government formed after this election?",
+      "resolution": "Same resolution as next_pm == netanyahu. Consistency pair with next_pm.",
+      "resolves_by": "2027-02-28",
+      "mirrors": []
+    },
+    "eisenkot_pm": {
+      "group": "government",
+      "type": "noul",
+      "instructions": "Will Gadi Eisenkot be prime minister of the first government formed after this election?",
+      "resolution": "Same resolution as next_pm == eisenkot. Consistency pair with next_pm.",
+      "resolves_by": "2027-02-28",
+      "mirrors": []
+    }
+  }
+}

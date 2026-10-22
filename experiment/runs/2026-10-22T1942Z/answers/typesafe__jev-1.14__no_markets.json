@@ -1,0 +1,526 @@
+{
+  "model": "typesafe/jev-1.14",
+  "served_by": "typesafe/jev-1.14-20261014",
+  "provider": "TypeSafe",
+  "generation_id": "gen-dec-1792698176-4TejjXnPcszjjLK7gQjr",
+  "usage": {
+    "input_tokens": 25359,
+    "output_tokens": 2693,
+    "cost": 0.001065078
+  },
+  "cost_usd": 0.001065078,
+  "missing_answers": [],
+  "suspected_truncation": false,
+  "answers": {
+    "largest_list": {
+      "type": "choice",
+      "choice": "likud",
+      "probabilities": {
+        "likud": 0.87,
+        "yashar": 0.12,
+        "together": 0,
+        "other": 0.01
+      },
+      "confidence": 0.83
+    },
+    "yashar_largest": {
+      "type": "noul",
+      "noul": 0.39
+    },
+    "second_list": {
+      "type": "choice",
+      "choice": "yashar",
+      "probabilities": {
+        "likud": 0.07,
+        "yashar": 0.89,
+        "together": 0.01,
+        "other": 0.03
+      },
+      "confidence": 0.85
+    },
+    "third_list": {
+      "type": "choice",
+      "choice": "together",
+      "probabilities": {
+        "together": 0.49,
+        "democrats": 0.03,
+        "shas": 0.07,
+        "otzma": 0.04,
+        "likud_or_yashar": 0.24,
+        "other": 0.13
+      },
+      "confidence": 0.39
+    },
+    "likud_below_32": {
+      "type": "noul",
+      "noul": 0.78
+    },
+    "netanyahu_bloc_61": {
+      "type": "noul",
+      "noul": 0.54
+    },
+    "opposition_zionist_61": {
+      "type": "noul",
+      "noul": 0.75
+    },
+    "no_bloc_majority": {
+      "type": "noul",
+      "noul": 0.56
+    },
+    "bloc_most_seats": {
+      "type": "choice",
+      "choice": "opposition",
+      "probabilities": {
+        "netanyahu": 0.48,
+        "opposition": 0.52
+      },
+      "confidence": 0.04
+    },
+    "netanyahu_bloc_seats": {
+      "type": "score",
+      "score": 3.66,
+      "legend": {
+        "0": "50 or fewer",
+        "1": "51-54",
+        "2": "55-57",
+        "3": "58-60",
+        "4": "61-63",
+        "5": "64 or more"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.02,
+        "2": 0.05,
+        "3": 0.08,
+        "4": 0.8,
+        "5": 0.02
+      },
+      "confidence": 0.75
+    },
+    "seats_likud": {
+      "type": "choice",
+      "choice": "30",
+      "probabilities": {
+        "0": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0,
+        "17": 0,
+        "18": 0.01,
+        "19": 0.02,
+        "20": 0.04,
+        "21": 0.02,
+        "22": 0,
+        "23": 0.01,
+        "24": 0.01,
+        "25": 0.01,
+        "26": 0.02,
+        "27": 0.02,
+        "28": 0.03,
+        "29": 0.05,
+        "30": 0.68,
+        "31": 0.03,
+        "32": 0.03,
+        "33": 0.01,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 0,
+        "39": 0,
+        "40": 0
+      },
+      "confidence": 0.67
+    },
+    "seats_yashar": {
+      "type": "choice",
+      "choice": "20",
+      "probabilities": {
+        "0": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0.01,
+        "17": 0.01,
+        "18": 0.01,
+        "19": 0.03,
+        "20": 0.45,
+        "21": 0.2,
+        "22": 0.13,
+        "23": 0.12,
+        "24": 0.03,
+        "25": 0.01,
+        "26": 0,
+        "27": 0,
+        "28": 0,
+        "29": 0,
+        "30": 0,
+        "31": 0,
+        "32": 0,
+        "33": 0,
+        "34": 0,
+        "35": 0,
+        "36": 0,
+        "37": 0,
+        "38": 0,
+        "39": 0,
+        "40": 0
+      },
+      "confidence": 0.44
+    },
+    "seats_together_b_yachad": {
+      "type": "choice",
+      "choice": "11",
+      "probabilities": {
+        "0": 0.01,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0.04,
+        "10": 0.07,
+        "11": 0.44,
+        "12": 0.21000000000000002,
+        "13": 0.12,
+        "14": 0.06,
+        "15": 0.04,
+        "16": 0.01,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0,
+        "21": 0,
+        "22": 0,
+        "23": 0,
+        "24": 0,
+        "25": 0
+      },
+      "confidence": 0.41
+    },
+    "seats_the_democrats": {
+      "type": "choice",
+      "choice": "9",
+      "probabilities": {
+        "0": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0.01,
+        "8": 0.31,
+        "9": 0.6,
+        "10": 0.05,
+        "11": 0.01,
+        "12": 0,
+        "13": 0,
+        "14": 0.01,
+        "15": 0,
+        "16": 0.01,
+        "17": 0,
+        "18": 0,
+        "19": 0,
+        "20": 0
+      },
+      "confidence": 0.58
+    },
+    "seats_shas": {
+      "type": "choice",
+      "choice": "9",
+      "probabilities": {
+        "0": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0.02,
+        "8": 0.16,
+        "9": 0.65,
+        "10": 0.15000000000000002,
+        "11": 0.02,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0
+      },
+      "confidence": 0.62
+    },
+    "seats_united_torah_judaism": {
+      "type": "choice",
+      "choice": "8",
+      "probabilities": {
+        "0": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0.01,
+        "7": 0.13,
+        "8": 0.85,
+        "9": 0.01,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0
+      },
+      "confidence": 0.84
+    },
+    "seats_otzma_yehudit": {
+      "type": "choice",
+      "choice": "8",
+      "probabilities": {
+        "0": 0,
+        "4": 0.01,
+        "5": 0,
+        "6": 0.02,
+        "7": 0.06999999999999999,
+        "8": 0.87,
+        "9": 0.03,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0,
+        "15": 0,
+        "16": 0
+      },
+      "confidence": 0.86
+    },
+    "seats_yisrael_beiteinu": {
+      "type": "choice",
+      "choice": "8",
+      "probabilities": {
+        "0": 0,
+        "4": 0.02,
+        "5": 0.05,
+        "6": 0.11,
+        "7": 0.08,
+        "8": 0.59,
+        "9": 0.05,
+        "10": 0.04,
+        "11": 0.02,
+        "12": 0.01,
+        "13": 0.01,
+        "14": 0.01,
+        "15": 0.01,
+        "16": 0
+      },
+      "confidence": 0.56
+    },
+    "seats_religious_zionist_party__zehut": {
+      "type": "choice",
+      "choice": "7",
+      "probabilities": {
+        "0": 0,
+        "4": 0,
+        "5": 0.01,
+        "6": 0.11,
+        "7": 0.85,
+        "8": 0.03,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0
+      },
+      "confidence": 0.84
+    },
+    "seats_joint_list": {
+      "type": "choice",
+      "choice": "8",
+      "probabilities": {
+        "0": 0,
+        "4": 0.01,
+        "5": 0.01,
+        "6": 0.07,
+        "7": 0.02,
+        "8": 0.81,
+        "9": 0.06,
+        "10": 0.01,
+        "11": 0,
+        "12": 0,
+        "13": 0,
+        "14": 0
+      },
+      "confidence": 0.79
+    },
+    "seats_united_arab_list_ra_am": {
+      "type": "choice",
+      "choice": "6",
+      "probabilities": {
+        "0": 0.01,
+        "4": 0.01,
+        "5": 0.19,
+        "6": 0.77,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0
+      },
+      "confidence": 0.74
+    },
+    "seats_the_reservists_and_the_economic_party": {
+      "type": "choice",
+      "choice": "0",
+      "probabilities": {
+        "0": 0.45,
+        "4": 0.37,
+        "5": 0.14,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0.01,
+        "10": 0,
+        "11": 0,
+        "12": 0
+      },
+      "confidence": 0.39
+    },
+    "seats_amcha_yisrael": {
+      "type": "choice",
+      "choice": "0",
+      "probabilities": {
+        "0": 0.87,
+        "4": 0.08,
+        "5": 0.02,
+        "6": 0.01,
+        "7": 0.01,
+        "8": 0.01,
+        "9": 0,
+        "10": 0,
+        "11": 0,
+        "12": 0
+      },
+      "confidence": 0.86
+    },
+    "passes_the_reservists_and_the_economic_party": {
+      "type": "noul",
+      "noul": 0.38
+    },
+    "passes_amcha_yisrael": {
+      "type": "noul",
+      "noul": 0.27
+    },
+    "passes_religious_zionist_party__zehut": {
+      "type": "noul",
+      "noul": 0.89
+    },
+    "passes_united_arab_list_ra_am": {
+      "type": "noul",
+      "noul": 0.83
+    },
+    "passes_yisrael_beiteinu": {
+      "type": "noul",
+      "noul": 0.91
+    },
+    "passes_joint_list": {
+      "type": "noul",
+      "noul": 0.89
+    },
+    "passes_noam": {
+      "type": "noul",
+      "noul": 0.53
+    },
+    "passes_israel_first": {
+      "type": "noul",
+      "noul": 0.17
+    },
+    "passes_haredi_public": {
+      "type": "noul",
+      "noul": 0.08
+    },
+    "lists_passing": {
+      "type": "score",
+      "score": 2.67,
+      "legend": {
+        "0": "9 or fewer",
+        "1": "10",
+        "2": "11",
+        "3": "12",
+        "4": "13",
+        "5": "14 or more"
+      },
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.11,
+        "2": 0.33,
+        "3": 0.33,
+        "4": 0.08,
+        "5": 0.12
+      },
+      "confidence": 0.32
+    },
+    "reservists_and_amcha_both_fail": {
+      "type": "noul",
+      "noul": 0.52
+    },
+    "turnout_below_2022": {
+      "type": "noul",
+      "noul": 0.56
+    },
+    "votes_cast": {
+      "type": "score",
+      "score": 3.4,
+      "legend": {
+        "0": "under 4.9 million",
+        "1": "4.9-5.1 million",
+        "2": "5.1-5.2 million",
+        "3": "5.2-5.3 million",
+        "4": "5.3-5.4 million",
+        "5": "5.4-5.5 million",
+        "6": "5.5 million or more"
+      },
+      "probabilities": {
+        "0": 0.11,
+        "1": 0.07,
+        "2": 0.13,
+        "3": 0.19999999999999998,
+        "4": 0.17,
+        "5": 0.15,
+        "6": 0.17
+      },
+      "confidence": 0.08
+    },
+    "next_pm": {
+      "type": "choice",
+      "choice": "netanyahu",
+      "probabilities": {
+        "netanyahu": 0.49,
+        "eisenkot": 0.11,
+        "bennett": 0.02,
+        "lieberman": 0,
+        "other": 0.38
+      },
+      "confidence": 0.36
+    },
+    "netanyahu_remains_pm": {
+      "type": "noul",
+      "noul": 0.55
+    },
+    "eisenkot_pm": {
+      "type": "noul",
+      "noul": 0.27
+    }
+  },
+  "condition": "no_markets"
+}

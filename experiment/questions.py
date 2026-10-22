@@ -9,7 +9,7 @@ Writes experiment/questions.json. Each question carries:
 - resolves_by: the date the answer is expected to be known;
 - mirrors: market outcomes it can be compared against, as "source:market_or_event".
 
-Seat questions use one ordered option per feasible seat count (0, then 4..N),
+Seat questions use one option per feasible seat count (0, then 4..N),
 because a list below the 3.25% threshold wins nothing and one above it wins at
 least 4. Every Kalshi "Above N" ladder and the Polymarket Likud bins can then be
 derived exactly from one distribution. List names are party_en from
@@ -108,9 +108,12 @@ q("netanyahu_bloc_seats", "blocs", "score", f"How many seats will the Netanyahu 
 
 # 3. Seats per list ------------------------------------------------------------
 for name, top in SEAT_LISTS.items():
-    opts = ["0 seats (below the threshold)"] + [f"{n} seats" for n in range(4, top)] + [f"{top} or more seats"]
-    q(f"seats_{slug(name)}", "seats", "score", f"How many seats will {name} win?",
-      f"Seats for {name} in the final CEC results. Option index i is 0 seats for i=0, otherwise i+3 seats.",
+    # choice, not score: System One caps score questions at 10 options (HTTP 422 from Jev, 2026-10-22),
+    # while choice accepted 38. Option keys are seat counts; the top key means "top or more".
+    opts = {"0": "0 seats (below the threshold)", **{str(n): f"{n} seats" for n in range(4, top)},
+            str(top): f"{top} or more seats"}
+    q(f"seats_{slug(name)}", "seats", "choice", f"How many seats will {name} win?",
+      f"Seats for {name} in the final CEC results. The option key is the seat count; key {top} means {top} or more.",
       FINAL, opts,
       ([f"kalshi:{KALSHI_COUNT[name]}"] if name in KALSHI_COUNT else [])
       + (["polymarket:israel-election-likud-of-seats"] if name == "Likud" else []))

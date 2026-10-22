@@ -1,0 +1,62 @@
+[
+  {
+    "model": "typesafe/jev-1.14",
+    "condition": "no_markets",
+    "provider": "TypeSafe",
+    "usage": {
+      "input_tokens": 25359,
+      "output_tokens": 2693,
+      "cost": 0.001065078
+    },
+    "cost_usd": 0.001065078,
+    "missing_answers": [],
+    "suspected_truncation": false,
+    "http_status": null,
+    "error": null
+  },
+  {
+    "model": "typesafe/jev-1.14",
+    "condition": "with_markets",
+    "provider": "TypeSafe",
+    "usage": {
+      "input_tokens": 27115,
+      "output_tokens": 2693,
+      "cost": 0.00113883
+    },
+    "cost_usd": 0.00113883,
+    "missing_answers": [],
+    "suspected_truncation": false,
+    "http_status": null,
+    "error": null
+  },
+  {
+    "model": "cloudflare/clef",
+    "condition": "no_markets",
+    "provider": "DeepInfra",
+    "usage": {
+      "input_tokens": 27708,
+      "output_tokens": 0,
+      "cost": 0.00664992
+    },
+    "cost_usd": 0.00664992,
+    "missing_answers": [],
+    "suspected_truncation": false,
+    "http_status": null,
+    "error": null
+  },
+  {
+    "model": "cloudflare/clef",
+    "condition": "with_markets",
+    "provider": "DeepInfra",
+    "usage": {
+      "input_tokens": 29447,
+      "output_tokens": 0,
+      "cost": 0.00706728
+    },
+    "cost_usd": 0.00706728,
+    "missing_answers": [],
+    "suspected_truncation": false,
+    "http_status": null,
+    "error": null
+  }
+]

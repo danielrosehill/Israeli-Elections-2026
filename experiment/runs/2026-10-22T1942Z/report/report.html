@@ -1,0 +1,298 @@
+<!doctype html><html><head><meta charset='utf-8'><style>
+@page { size: A4; margin: 18mm 16mm; @bottom-right { content: counter(page); font-size: 8pt; color: #52514e; } }
+body { font-family: "DejaVu Sans", sans-serif; font-size: 9.5pt; line-height: 1.45; color: #0b0b0b; }
+h1 { font-size: 17pt; margin: 0 0 8pt; }
+h2 { font-size: 12.5pt; margin: 16pt 0 6pt; border-bottom: 1px solid #e1e0d9; padding-bottom: 2pt; }
+table { border-collapse: collapse; margin: 6pt 0 10pt; font-size: 8.5pt; }
+th, td { border-bottom: 1px solid #e1e0d9; padding: 2.5pt 7pt; text-align: left; }
+th { color: #52514e; font-weight: 600; }
+img { width: 100%; margin: 4pt 0; }
+code { font-size: 8.5pt; background: #f3f2ee; padding: 0 2pt; }
+a { color: #2a78d6; }
+</style></head><body><h1>Forecasting the 2026 Knesset election with decision models</h1>
+<p><strong>Run:</strong> <code>2026-10-22T1942Z</code>. The forecast was frozen on 22 October 2026, five days before polling day on 27 October.<br>
+<strong>Panel:</strong> <code>cloudflare/clef</code> (Clef) and <code>typesafe/jev-1.14</code> (Jev 1.14), called through OpenRouter's System One endpoint. No LLMs and no judge.<br>
+<strong>Cost of the run:</strong> $0.0159 for 4 requests and 39 questions each, 156 answers in all.<br>
+<strong>Repo:</strong> <a href="https://github.com/danielrosehill/Israeli-Elections-2026">https://github.com/danielrosehill/Israeli-Elections-2026</a></p>
+<h2>What was asked</h2>
+<p>Decision models don't write text. They take a block of evidence (the <em>state</em>) and a set of typed questions, and return probabilities:</p>
+<ul>
+<li>yes/no questions (<code>noul</code>);</li>
+<li>one-of-N questions (<code>choice</code>);</li>
+<li>ordered bins (<code>score</code>).</li>
+</ul>
+<p>The panel answered <strong>39 election-only questions</strong> in six groups:</p>
+<ul>
+<li>headline result (5 questions);</li>
+<li>blocs (5);</li>
+<li>seats per list (13);</li>
+<li>the 3.25% threshold (11);</li>
+<li>turnout (2);</li>
+<li>prime minister (3).</li>
+</ul>
+<p>Several questions ask for the same quantity in two different ways, so each model's internal consistency can be measured.</p>
+<p>Both models received the same frozen evidence pack, about 25–29k tokens, under two conditions:</p>
+<ul>
+<li><strong>without markets:</strong><ul>
+<li>the election rules;</li>
+<li>the outgoing Knesset;</li>
+<li>the top of every candidate list;</li>
+<li>all 75 standard polls since 1 September, with monthly and per-pollster means;</li>
+<li>a 3,000-word factual news digest up to 22 October.</li>
+</ul>
+</li>
+<li><strong>with markets:</strong> the same pack, plus a section of Kalshi and Polymarket prices snapshotted at 19:41 UTC on 22 October.</li>
+</ul>
+<p>The resolution rule for every question is written down in <code>questions.json</code> and was fixed before the run. When the CEC certifies the result, every answer will get a Brier score, and so will the market prices.</p>
+<h2>Headline: the market section decides who "wins"</h2>
+<p><img alt="Market moves" src="../analysis/fig_markets.png" /></p>
+<p>Without the market prices, both models favour Likud as the largest list and Netanyahu as the next prime minister:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Clef</th>
+<th>Jev 1.14</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Likud largest list</td>
+<td>0.63</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td>Netanyahu next PM</td>
+<td>0.81</td>
+<td>0.49</td>
+</tr>
+</tbody>
+</table>
+<p>Add the market section and both models flip:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Clef</th>
+<th>Jev 1.14</th>
+<th>Market</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Yashar largest list</td>
+<td>0.73</td>
+<td>0.96</td>
+<td>0.69</td>
+</tr>
+<tr>
+<td>Eisenkot next PM</td>
+<td>0.55</td>
+<td>0.73</td>
+<td>0.49</td>
+</tr>
+</tbody>
+</table>
+<p>The market moved both models past the market's own price, not just towards it. This is the clearest finding of the run: <strong>for the headline questions, these models are mostly reading the market back.</strong> The polls are the same in both conditions. Their mean has Likud at 23.2 seats and Yashar at 21.5, and neither model's seat estimates change much between conditions (next chart).</p>
+<p>Jev's flip goes furthest. At 0.96 for Yashar it is more confident than any market or poll average supports.</p>
+<h2>Seats: stable, and close to the polls</h2>
+<p><img alt="Seats" src="../analysis/fig_seats.png" /></p>
+<p>Expected seats, from each model's full seat distribution, against the mean of the 24 polls published since 8 October:</p>
+<table>
+<thead>
+<tr>
+<th>List</th>
+<th>Poll mean</th>
+<th>Clef (no mkt / mkt)</th>
+<th>Jev (no mkt / mkt)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Likud</td>
+<td>23.2</td>
+<td>24.2 / 23.0</td>
+<td>28.5 / 24.8</td>
+</tr>
+<tr>
+<td>Yashar</td>
+<td>21.5</td>
+<td>20.3 / 21.1</td>
+<td>20.9 / 21.3</td>
+</tr>
+<tr>
+<td>Together</td>
+<td>12.0</td>
+<td>12.2 / 12.1</td>
+<td>11.6 / 12.2</td>
+</tr>
+<tr>
+<td>The Democrats</td>
+<td>8.9</td>
+<td>8.9 / 8.2</td>
+<td>8.9 / 8.6</td>
+</tr>
+<tr>
+<td>Shas</td>
+<td>8.0</td>
+<td>8.4 / 7.8</td>
+<td>9.0 / 8.5</td>
+</tr>
+<tr>
+<td>Joint List</td>
+<td>8.0</td>
+<td>8.5 / 8.1</td>
+<td>7.8 / 8.0</td>
+</tr>
+<tr>
+<td>Otzma Yehudit</td>
+<td>8.0</td>
+<td>7.2 / 7.0</td>
+<td>7.9 / 7.8</td>
+</tr>
+<tr>
+<td>UTJ</td>
+<td>7.7</td>
+<td>6.5 / 6.6</td>
+<td>7.9 / 7.9</td>
+</tr>
+<tr>
+<td>Yisrael Beiteinu</td>
+<td>7.4</td>
+<td>6.3 / 6.6</td>
+<td>7.9 / 7.3</td>
+</tr>
+<tr>
+<td>RZP–Zehut</td>
+<td>6.3</td>
+<td>6.9 / 6.7</td>
+<td>6.9 / 6.3</td>
+</tr>
+<tr>
+<td>Ra'am</td>
+<td>5.4</td>
+<td>5.5 / 5.9</td>
+<td>5.8 / 5.6</td>
+</tr>
+<tr>
+<td>Reservists + Economic</td>
+<td>2.1</td>
+<td>1.8 / 1.9</td>
+<td>2.5 / 2.5</td>
+</tr>
+<tr>
+<td>Amcha Yisrael</td>
+<td>1.5</td>
+<td>1.3 / 1.1</td>
+<td>0.6 / 0.5</td>
+</tr>
+</tbody>
+</table>
+<p>Clef tracks the poll mean within about one seat everywhere. Jev without markets puts Likud 5 seats above the polls, which explains its 0.87 for Likud as the largest list. That extra Likud weight disappears once the market section is added.</p>
+<p>The seat questions were answered independently, so the expected seats don't have to sum to 120:</p>
+<ul>
+<li>Clef's sum: 116–118;</li>
+<li>Jev's sum: 121–126.</li>
+</ul>
+<h2>The threshold</h2>
+<p><img alt="Threshold" src="../analysis/fig_threshold.png" /></p>
+<p>The two lists that actually matter are both expected to fall short of the threshold:</p>
+<ul>
+<li><strong>The Reservists and the Economic Party:</strong> P(pass) 0.30–0.38 (Kalshi 0.46);</li>
+<li><strong>Amcha Yisrael:</strong> P(pass) 0.09–0.27 (Kalshi 0.26).</li>
+</ul>
+<p>Both models put P(both fail) at 0.46–0.66.</p>
+<p>Everything polled above about 5 seats is at least 0.81 to pass.</p>
+<p>One clear miss: Jev without markets gave <strong>Noam</strong>, which polls at zero, a 0.53 chance of passing. That fell to 0.14 once market prices were present.</p>
+<h2>Blocs: the models expect a hung Knesset</h2>
+<ul>
+<li><strong>Netanyahu bloc</strong> (Likud, Shas, UTJ, Otzma, RZP–Zehut, Noam), P(61+):<ul>
+<li>Clef: 0.31–0.33;</li>
+<li>Jev: 0.54 in both conditions.</li>
+</ul>
+</li>
+<li><strong>Zionist opposition without the Arab lists</strong>, P(61+):<ul>
+<li>Clef: 0.11–0.13;</li>
+<li>Jev: 0.60–0.75.</li>
+</ul>
+</li>
+<li><strong>Neither bloc at 61:</strong><ul>
+<li>Clef: 0.80–0.82;</li>
+<li>Jev: 0.52–0.56;</li>
+<li>market: 0.36.</li>
+</ul>
+</li>
+</ul>
+<p>Clef's bloc answers match the polls. The poll mean has both blocs at about 53 seats, with the Arab lists holding the balance. Jev's don't: it gives the opposition 0.75 to reach 61 even though its own seat estimates for those lists sum to about 52.</p>
+<h2>Consistency: Clef is coherent, Jev often isn't</h2>
+<p><img alt="Consistency" src="../analysis/fig_consistency.png" /></p>
+<p>Twelve pairs of questions ask for the same probability in two forms. Mean absolute gap within each pair:</p>
+<ul>
+<li><strong>Clef: 0.08–0.10</strong>;</li>
+<li><strong>Jev: 0.19–0.21</strong>.</li>
+</ul>
+<p>Jev's worst cases:</p>
+<ul>
+<li>largest list: Likud 0.87, while <em>Yashar largest?</em> gets 0.39;</li>
+<li>its bloc-seat bins put 0.80 on 61–63 seats, while <em>bloc reaches 61?</em> gets 0.54;</li>
+<li>the hung-parliament answer is 0.54 away from what its two bloc answers imply.</li>
+</ul>
+<p>Clef's largest inconsistency is with markets: <em>Eisenkot PM?</em> gets 0.75 as a yes/no question but 0.55 as a choice.</p>
+<h2>Turnout</h2>
+<p>Both models put P(turnout below 2022's 70.6%) at 0.49–0.56, which amounts to no view. With markets, both concentrate the votes-cast distribution on 5.2–5.3 million, the Kalshi ladder's centre.</p>
+<h2>What to take from it</h2>
+<ol>
+<li><strong>Cheap:</strong> the whole forecast cost under two cents. Billing is on input tokens only, and every question in a request shares one state, so adding questions is close to free.</li>
+<li><strong>Very sensitive to the market section:</strong> the headline calls flip from Likud and Netanyahu to Yashar and Eisenkot, with unchanged polls and almost unchanged seat estimates. If the market is wrong, the "with markets" forecast will be wrong with it, and more confidently.</li>
+<li><strong>Clef is better calibrated than Jev:</strong> close to the polls, internally coherent, with no absurd answers. Jev is sharper and less consistent, and produced the one clearly absurd answer (Noam).</li>
+<li><strong>Scoring after the result:</strong> Brier scores for both models in both conditions, and for the market prices, once the CEC certifies the result (due about 5 November 2026).</li>
+</ol>
+<h2>Method notes</h2>
+<ul>
+<li><strong>Endpoint:</strong> <code>POST https://openrouter.ai/api/v1/systemone</code>. Decision models are hidden from OpenRouter's model list unless the query has <code>?output_modalities=all</code>.</li>
+<li><strong>Clef's host:</strong> its cheapest host, PrimeIntellect, silently truncates the state to 16,384 tokens. It bills exactly 16,384 and answers from the prefix. This run forced DeepInfra (64k context), and the runner refuses any response billed at a context cap.</li>
+<li><strong>Question types:</strong> <code>score</code> questions take at most 10 options, so the seat questions are <code>choice</code> questions keyed by seat count.</li>
+<li><strong>Reproducibility:</strong> every input to the evidence pack is hashed in <code>manifest.json</code>. The exact states sent are <code>state_no_markets.md</code> and <code>state_with_markets.md</code>.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Request</th>
+<th>Provider</th>
+<th>Input tokens</th>
+<th>Cost (USD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jev 1.14, without markets</td>
+<td>TypeSafe</td>
+<td>25,359</td>
+<td>0.00107</td>
+</tr>
+<tr>
+<td>Jev 1.14, with markets</td>
+<td>TypeSafe</td>
+<td>27,115</td>
+<td>0.00114</td>
+</tr>
+<tr>
+<td>Clef, without markets</td>
+<td>DeepInfra</td>
+<td>27,708</td>
+<td>0.00665</td>
+</tr>
+<tr>
+<td>Clef, with markets</td>
+<td>DeepInfra</td>
+<td>29,447</td>
+<td>0.00707</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td><strong>0.01592</strong></td>
+</tr>
+</tbody>
+</table></body></html>

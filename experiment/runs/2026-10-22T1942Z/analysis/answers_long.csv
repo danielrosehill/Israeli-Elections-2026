@@ -1,0 +1,1133 @@
+model,condition,question,group,option,label,probability
+Clef,no_markets,largest_list,result,likud,Likud,0.6322
+Clef,no_markets,largest_list,result,yashar,Yashar,0.1827
+Clef,no_markets,largest_list,result,together,Together (B'Yachad),0.0699
+Clef,no_markets,largest_list,result,other,Any other list,0.1152
+Clef,no_markets,yashar_largest,result,true,true,0.2471
+Clef,no_markets,second_list,result,likud,Likud,0.2393
+Clef,no_markets,second_list,result,yashar,Yashar,0.586
+Clef,no_markets,second_list,result,together,Together (B'Yachad),0.0534
+Clef,no_markets,second_list,result,other,Any other list,0.1213
+Clef,no_markets,third_list,result,together,Together (B'Yachad),0.2578
+Clef,no_markets,third_list,result,democrats,The Democrats,0.029
+Clef,no_markets,third_list,result,shas,Shas,0.0457
+Clef,no_markets,third_list,result,otzma,Otzma Yehudit,0.0457
+Clef,no_markets,third_list,result,likud_or_yashar,Likud or Yashar,0.4534
+Clef,no_markets,third_list,result,other,Any other list,0.1684
+Clef,no_markets,likud_below_32,result,true,true,0.9323
+Clef,no_markets,netanyahu_bloc_61,blocs,true,true,0.3107
+Clef,no_markets,opposition_zionist_61,blocs,true,true,0.109
+Clef,no_markets,no_bloc_majority,blocs,true,true,0.8178
+Clef,no_markets,bloc_most_seats,blocs,netanyahu,"Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam)",0.668
+Clef,no_markets,bloc_most_seats,blocs,opposition,"Zionist opposition (Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael)",0.332
+Clef,no_markets,netanyahu_bloc_seats,blocs,0,50 or fewer,0.0858
+Clef,no_markets,netanyahu_bloc_seats,blocs,1,51-54,0.1415
+Clef,no_markets,netanyahu_bloc_seats,blocs,2,55-57,0.3151
+Clef,no_markets,netanyahu_bloc_seats,blocs,3,58-60,0.3226
+Clef,no_markets,netanyahu_bloc_seats,blocs,4,61-63,0.1155
+Clef,no_markets,netanyahu_bloc_seats,blocs,5,64 or more,0.0195
+Clef,no_markets,seats_likud,seats,0,0 seats (below the threshold),0.0024
+Clef,no_markets,seats_likud,seats,4,4 seats,0.0013
+Clef,no_markets,seats_likud,seats,5,5 seats,0.0012
+Clef,no_markets,seats_likud,seats,6,6 seats,0.0014
+Clef,no_markets,seats_likud,seats,7,7 seats,0.0015
+Clef,no_markets,seats_likud,seats,8,8 seats,0.0012
+Clef,no_markets,seats_likud,seats,9,9 seats,0.0014
+Clef,no_markets,seats_likud,seats,10,10 seats,0.0024
+Clef,no_markets,seats_likud,seats,11,11 seats,0.002
+Clef,no_markets,seats_likud,seats,12,12 seats,0.0024
+Clef,no_markets,seats_likud,seats,13,13 seats,0.0044
+Clef,no_markets,seats_likud,seats,14,14 seats,0.0054
+Clef,no_markets,seats_likud,seats,15,15 seats,0.0145
+Clef,no_markets,seats_likud,seats,16,16 seats,0.0207
+Clef,no_markets,seats_likud,seats,17,17 seats,0.0227
+Clef,no_markets,seats_likud,seats,18,18 seats,0.0336
+Clef,no_markets,seats_likud,seats,19,19 seats,0.0415
+Clef,no_markets,seats_likud,seats,20,20 seats,0.0415
+Clef,no_markets,seats_likud,seats,21,21 seats,0.059
+Clef,no_markets,seats_likud,seats,22,22 seats,0.0679
+Clef,no_markets,seats_likud,seats,23,23 seats,0.108
+Clef,no_markets,seats_likud,seats,24,24 seats,0.0775
+Clef,no_markets,seats_likud,seats,25,25 seats,0.0628
+Clef,no_markets,seats_likud,seats,26,26 seats,0.0581
+Clef,no_markets,seats_likud,seats,27,27 seats,0.0812
+Clef,no_markets,seats_likud,seats,28,28 seats,0.0825
+Clef,no_markets,seats_likud,seats,29,29 seats,0.0711
+Clef,no_markets,seats_likud,seats,30,30 seats,0.059
+Clef,no_markets,seats_likud,seats,31,31 seats,0.0336
+Clef,no_markets,seats_likud,seats,32,32 seats,0.0169
+Clef,no_markets,seats_likud,seats,33,33 seats,0.0061
+Clef,no_markets,seats_likud,seats,34,34 seats,0.0044
+Clef,no_markets,seats_likud,seats,35,35 seats,0.002
+Clef,no_markets,seats_likud,seats,36,36 seats,0.0021
+Clef,no_markets,seats_likud,seats,37,37 seats,0.0016
+Clef,no_markets,seats_likud,seats,38,38 seats,0.0017
+Clef,no_markets,seats_likud,seats,39,39 seats,0.0016
+Clef,no_markets,seats_likud,seats,40,40 or more seats,0.0016
+Clef,no_markets,seats_yashar,seats,0,0 seats (below the threshold),0.0052
+Clef,no_markets,seats_yashar,seats,4,4 seats,0.0019
+Clef,no_markets,seats_yashar,seats,5,5 seats,0.0019
+Clef,no_markets,seats_yashar,seats,6,6 seats,0.0031
+Clef,no_markets,seats_yashar,seats,7,7 seats,0.0027
+Clef,no_markets,seats_yashar,seats,8,8 seats,0.0031
+Clef,no_markets,seats_yashar,seats,9,9 seats,0.0034
+Clef,no_markets,seats_yashar,seats,10,10 seats,0.0047
+Clef,no_markets,seats_yashar,seats,11,11 seats,0.0066
+Clef,no_markets,seats_yashar,seats,12,12 seats,0.0105
+Clef,no_markets,seats_yashar,seats,13,13 seats,0.0264
+Clef,no_markets,seats_yashar,seats,14,14 seats,0.0241
+Clef,no_markets,seats_yashar,seats,15,15 seats,0.0376
+Clef,no_markets,seats_yashar,seats,16,16 seats,0.0256
+Clef,no_markets,seats_yashar,seats,17,17 seats,0.0361
+Clef,no_markets,seats_yashar,seats,18,18 seats,0.0353
+Clef,no_markets,seats_yashar,seats,19,19 seats,0.096
+Clef,no_markets,seats_yashar,seats,20,20 seats,0.1478
+Clef,no_markets,seats_yashar,seats,21,21 seats,0.1617
+Clef,no_markets,seats_yashar,seats,22,22 seats,0.1088
+Clef,no_markets,seats_yashar,seats,23,23 seats,0.119
+Clef,no_markets,seats_yashar,seats,24,24 seats,0.0498
+Clef,no_markets,seats_yashar,seats,25,25 seats,0.0269
+Clef,no_markets,seats_yashar,seats,26,26 seats,0.0158
+Clef,no_markets,seats_yashar,seats,27,27 seats,0.005
+Clef,no_markets,seats_yashar,seats,28,28 seats,0.0063
+Clef,no_markets,seats_yashar,seats,29,29 seats,0.0041
+Clef,no_markets,seats_yashar,seats,30,30 seats,0.0038
+Clef,no_markets,seats_yashar,seats,31,31 seats,0.004
+Clef,no_markets,seats_yashar,seats,32,32 seats,0.0042
+Clef,no_markets,seats_yashar,seats,33,33 seats,0.0045
+Clef,no_markets,seats_yashar,seats,34,34 seats,0.0025
+Clef,no_markets,seats_yashar,seats,35,35 seats,0.0018
+Clef,no_markets,seats_yashar,seats,36,36 seats,0.002
+Clef,no_markets,seats_yashar,seats,37,37 seats,0.0017
+Clef,no_markets,seats_yashar,seats,38,38 seats,0.0021
+Clef,no_markets,seats_yashar,seats,39,39 seats,0.0021
+Clef,no_markets,seats_yashar,seats,40,40 or more seats,0.0019
+Clef,no_markets,seats_together_b_yachad,seats,0,0 seats (below the threshold),0.0089
+Clef,no_markets,seats_together_b_yachad,seats,4,4 seats,0.0026
+Clef,no_markets,seats_together_b_yachad,seats,5,5 seats,0.0027
+Clef,no_markets,seats_together_b_yachad,seats,6,6 seats,0.0043
+Clef,no_markets,seats_together_b_yachad,seats,7,7 seats,0.0054
+Clef,no_markets,seats_together_b_yachad,seats,8,8 seats,0.012
+Clef,no_markets,seats_together_b_yachad,seats,9,9 seats,0.0192
+Clef,no_markets,seats_together_b_yachad,seats,10,10 seats,0.1599
+Clef,no_markets,seats_together_b_yachad,seats,11,11 seats,0.2075
+Clef,no_markets,seats_together_b_yachad,seats,12,12 seats,0.1961
+Clef,no_markets,seats_together_b_yachad,seats,13,13 seats,0.1789
+Clef,no_markets,seats_together_b_yachad,seats,14,14 seats,0.065
+Clef,no_markets,seats_together_b_yachad,seats,15,15 seats,0.062
+Clef,no_markets,seats_together_b_yachad,seats,16,16 seats,0.0211
+Clef,no_markets,seats_together_b_yachad,seats,17,17 seats,0.0084
+Clef,no_markets,seats_together_b_yachad,seats,18,18 seats,0.0075
+Clef,no_markets,seats_together_b_yachad,seats,19,19 seats,0.0074
+Clef,no_markets,seats_together_b_yachad,seats,20,20 seats,0.0065
+Clef,no_markets,seats_together_b_yachad,seats,21,21 seats,0.0046
+Clef,no_markets,seats_together_b_yachad,seats,22,22 seats,0.0066
+Clef,no_markets,seats_together_b_yachad,seats,23,23 seats,0.0058
+Clef,no_markets,seats_together_b_yachad,seats,24,24 seats,0.0046
+Clef,no_markets,seats_together_b_yachad,seats,25,25 or more seats,0.0029
+Clef,no_markets,seats_the_democrats,seats,0,0 seats (below the threshold),0.0254
+Clef,no_markets,seats_the_democrats,seats,4,4 seats,0.0122
+Clef,no_markets,seats_the_democrats,seats,5,5 seats,0.0201
+Clef,no_markets,seats_the_democrats,seats,6,6 seats,0.0482
+Clef,no_markets,seats_the_democrats,seats,7,7 seats,0.0943
+Clef,no_markets,seats_the_democrats,seats,8,8 seats,0.2281
+Clef,no_markets,seats_the_democrats,seats,9,9 seats,0.3789
+Clef,no_markets,seats_the_democrats,seats,10,10 seats,0.0375
+Clef,no_markets,seats_the_democrats,seats,11,11 seats,0.0331
+Clef,no_markets,seats_the_democrats,seats,12,12 seats,0.025
+Clef,no_markets,seats_the_democrats,seats,13,13 seats,0.0198
+Clef,no_markets,seats_the_democrats,seats,14,14 seats,0.0161
+Clef,no_markets,seats_the_democrats,seats,15,15 seats,0.0174
+Clef,no_markets,seats_the_democrats,seats,16,16 seats,0.0095
+Clef,no_markets,seats_the_democrats,seats,17,17 seats,0.0076
+Clef,no_markets,seats_the_democrats,seats,18,18 seats,0.0086
+Clef,no_markets,seats_the_democrats,seats,19,19 seats,0.0089
+Clef,no_markets,seats_the_democrats,seats,20,20 or more seats,0.0092
+Clef,no_markets,seats_shas,seats,0,0 seats (below the threshold),0.0223
+Clef,no_markets,seats_shas,seats,4,4 seats,0.0142
+Clef,no_markets,seats_shas,seats,5,5 seats,0.02
+Clef,no_markets,seats_shas,seats,6,6 seats,0.0578
+Clef,no_markets,seats_shas,seats,7,7 seats,0.1633
+Clef,no_markets,seats_shas,seats,8,8 seats,0.2714
+Clef,no_markets,seats_shas,seats,9,9 seats,0.2923
+Clef,no_markets,seats_shas,seats,10,10 seats,0.0324
+Clef,no_markets,seats_shas,seats,11,11 seats,0.0457
+Clef,no_markets,seats_shas,seats,12,12 seats,0.0295
+Clef,no_markets,seats_shas,seats,13,13 seats,0.0216
+Clef,no_markets,seats_shas,seats,14,14 seats,0.0114
+Clef,no_markets,seats_shas,seats,15,15 seats,0.0091
+Clef,no_markets,seats_shas,seats,16,16 or more seats,0.0091
+Clef,no_markets,seats_united_torah_judaism,seats,0,0 seats (below the threshold),0.0756
+Clef,no_markets,seats_united_torah_judaism,seats,4,4 seats,0.033
+Clef,no_markets,seats_united_torah_judaism,seats,5,5 seats,0.0678
+Clef,no_markets,seats_united_torah_judaism,seats,6,6 seats,0.1704
+Clef,no_markets,seats_united_torah_judaism,seats,7,7 seats,0.4103
+Clef,no_markets,seats_united_torah_judaism,seats,8,8 seats,0.148
+Clef,no_markets,seats_united_torah_judaism,seats,9,9 seats,0.052
+Clef,no_markets,seats_united_torah_judaism,seats,10,10 seats,0.0109
+Clef,no_markets,seats_united_torah_judaism,seats,11,11 seats,0.0099
+Clef,no_markets,seats_united_torah_judaism,seats,12,12 seats,0.0088
+Clef,no_markets,seats_united_torah_judaism,seats,13,13 seats,0.0073
+Clef,no_markets,seats_united_torah_judaism,seats,14,14 or more seats,0.0062
+Clef,no_markets,seats_otzma_yehudit,seats,0,0 seats (below the threshold),0.029
+Clef,no_markets,seats_otzma_yehudit,seats,4,4 seats,0.0268
+Clef,no_markets,seats_otzma_yehudit,seats,5,5 seats,0.0632
+Clef,no_markets,seats_otzma_yehudit,seats,6,6 seats,0.2199
+Clef,no_markets,seats_otzma_yehudit,seats,7,7 seats,0.2642
+Clef,no_markets,seats_otzma_yehudit,seats,8,8 seats,0.2182
+Clef,no_markets,seats_otzma_yehudit,seats,9,9 seats,0.1059
+Clef,no_markets,seats_otzma_yehudit,seats,10,10 seats,0.016
+Clef,no_markets,seats_otzma_yehudit,seats,11,11 seats,0.011
+Clef,no_markets,seats_otzma_yehudit,seats,12,12 seats,0.0131
+Clef,no_markets,seats_otzma_yehudit,seats,13,13 seats,0.0107
+Clef,no_markets,seats_otzma_yehudit,seats,14,14 seats,0.0083
+Clef,no_markets,seats_otzma_yehudit,seats,15,15 seats,0.0083
+Clef,no_markets,seats_otzma_yehudit,seats,16,16 or more seats,0.0055
+Clef,no_markets,seats_yisrael_beiteinu,seats,0,0 seats (below the threshold),0.0976
+Clef,no_markets,seats_yisrael_beiteinu,seats,4,4 seats,0.0703
+Clef,no_markets,seats_yisrael_beiteinu,seats,5,5 seats,0.1477
+Clef,no_markets,seats_yisrael_beiteinu,seats,6,6 seats,0.1911
+Clef,no_markets,seats_yisrael_beiteinu,seats,7,7 seats,0.2082
+Clef,no_markets,seats_yisrael_beiteinu,seats,8,8 seats,0.1313
+Clef,no_markets,seats_yisrael_beiteinu,seats,9,9 seats,0.0784
+Clef,no_markets,seats_yisrael_beiteinu,seats,10,10 seats,0.0111
+Clef,no_markets,seats_yisrael_beiteinu,seats,11,11 seats,0.0154
+Clef,no_markets,seats_yisrael_beiteinu,seats,12,12 seats,0.0152
+Clef,no_markets,seats_yisrael_beiteinu,seats,13,13 seats,0.0109
+Clef,no_markets,seats_yisrael_beiteinu,seats,14,14 seats,0.0118
+Clef,no_markets,seats_yisrael_beiteinu,seats,15,15 seats,0.0063
+Clef,no_markets,seats_yisrael_beiteinu,seats,16,16 or more seats,0.0045
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,0,0 seats (below the threshold),0.0378
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,4,4 seats,0.0478
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,5,5 seats,0.0966
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,6,6 seats,0.2829
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,7,7 seats,0.2337
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,8,8 seats,0.1087
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,9,9 seats,0.0873
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,10,10 seats,0.0137
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,11,11 seats,0.0237
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,12,12 seats,0.0226
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,13,13 seats,0.0286
+Clef,no_markets,seats_religious_zionist_party__zehut,seats,14,14 or more seats,0.0165
+Clef,no_markets,seats_joint_list,seats,0,0 seats (below the threshold),0.0418
+Clef,no_markets,seats_joint_list,seats,4,4 seats,0.018
+Clef,no_markets,seats_joint_list,seats,5,5 seats,0.0399
+Clef,no_markets,seats_joint_list,seats,6,6 seats,0.1076
+Clef,no_markets,seats_joint_list,seats,7,7 seats,0.1746
+Clef,no_markets,seats_joint_list,seats,8,8 seats,0.1888
+Clef,no_markets,seats_joint_list,seats,9,9 seats,0.1191
+Clef,no_markets,seats_joint_list,seats,10,10 seats,0.0563
+Clef,no_markets,seats_joint_list,seats,11,11 seats,0.0618
+Clef,no_markets,seats_joint_list,seats,12,12 seats,0.0628
+Clef,no_markets,seats_joint_list,seats,13,13 seats,0.0599
+Clef,no_markets,seats_joint_list,seats,14,14 or more seats,0.0695
+Clef,no_markets,seats_united_arab_list_ra_am,seats,0,0 seats (below the threshold),0.1352
+Clef,no_markets,seats_united_arab_list_ra_am,seats,4,4 seats,0.1053
+Clef,no_markets,seats_united_arab_list_ra_am,seats,5,5 seats,0.2731
+Clef,no_markets,seats_united_arab_list_ra_am,seats,6,6 seats,0.2013
+Clef,no_markets,seats_united_arab_list_ra_am,seats,7,7 seats,0.1103
+Clef,no_markets,seats_united_arab_list_ra_am,seats,8,8 seats,0.0521
+Clef,no_markets,seats_united_arab_list_ra_am,seats,9,9 seats,0.0412
+Clef,no_markets,seats_united_arab_list_ra_am,seats,10,10 seats,0.0211
+Clef,no_markets,seats_united_arab_list_ra_am,seats,11,11 seats,0.0288
+Clef,no_markets,seats_united_arab_list_ra_am,seats,12,12 or more seats,0.0316
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,0,0 seats (below the threshold),0.6835
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,4,4 seats,0.1215
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,5,5 seats,0.0737
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,6,6 seats,0.0436
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,7,7 seats,0.0234
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,8,8 seats,0.0146
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,9,9 seats,0.0119
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,10,10 seats,0.0096
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,11,11 seats,0.0105
+Clef,no_markets,seats_the_reservists_and_the_economic_party,seats,12,12 or more seats,0.0077
+Clef,no_markets,seats_amcha_yisrael,seats,0,0 seats (below the threshold),0.7773
+Clef,no_markets,seats_amcha_yisrael,seats,4,4 seats,0.0807
+Clef,no_markets,seats_amcha_yisrael,seats,5,5 seats,0.0501
+Clef,no_markets,seats_amcha_yisrael,seats,6,6 seats,0.035
+Clef,no_markets,seats_amcha_yisrael,seats,7,7 seats,0.0133
+Clef,no_markets,seats_amcha_yisrael,seats,8,8 seats,0.0121
+Clef,no_markets,seats_amcha_yisrael,seats,9,9 seats,0.0088
+Clef,no_markets,seats_amcha_yisrael,seats,10,10 seats,0.0086
+Clef,no_markets,seats_amcha_yisrael,seats,11,11 seats,0.0069
+Clef,no_markets,seats_amcha_yisrael,seats,12,12 or more seats,0.0073
+Clef,no_markets,passes_the_reservists_and_the_economic_party,threshold,true,true,0.3045
+Clef,no_markets,passes_amcha_yisrael,threshold,true,true,0.1184
+Clef,no_markets,passes_religious_zionist_party__zehut,threshold,true,true,0.9093
+Clef,no_markets,passes_united_arab_list_ra_am,threshold,true,true,0.8805
+Clef,no_markets,passes_yisrael_beiteinu,threshold,true,true,0.8171
+Clef,no_markets,passes_joint_list,threshold,true,true,0.929
+Clef,no_markets,passes_noam,threshold,true,true,0.0278
+Clef,no_markets,passes_israel_first,threshold,true,true,0.0085
+Clef,no_markets,passes_haredi_public,threshold,true,true,0.0083
+Clef,no_markets,lists_passing,threshold,0,9 or fewer,0.0476
+Clef,no_markets,lists_passing,threshold,1,10,0.116
+Clef,no_markets,lists_passing,threshold,2,11,0.1912
+Clef,no_markets,lists_passing,threshold,3,12,0.2634
+Clef,no_markets,lists_passing,threshold,4,13,0.2352
+Clef,no_markets,lists_passing,threshold,5,14 or more,0.1466
+Clef,no_markets,reservists_and_amcha_both_fail,threshold,true,true,0.6637
+Clef,no_markets,turnout_below_2022,turnout,true,true,0.5215
+Clef,no_markets,votes_cast,turnout,0,under 4.9 million,0.1252
+Clef,no_markets,votes_cast,turnout,1,4.9-5.1 million,0.157
+Clef,no_markets,votes_cast,turnout,2,5.1-5.2 million,0.1627
+Clef,no_markets,votes_cast,turnout,3,5.2-5.3 million,0.1752
+Clef,no_markets,votes_cast,turnout,4,5.3-5.4 million,0.1322
+Clef,no_markets,votes_cast,turnout,5,5.4-5.5 million,0.1195
+Clef,no_markets,votes_cast,turnout,6,5.5 million or more,0.1282
+Clef,no_markets,next_pm,government,netanyahu,Benjamin Netanyahu (Likud),0.8102
+Clef,no_markets,next_pm,government,eisenkot,Gadi Eisenkot (Yashar),0.0971
+Clef,no_markets,next_pm,government,bennett,Naftali Bennett (Together),0.047
+Clef,no_markets,next_pm,government,lieberman,Avigdor Lieberman (Yisrael Beiteinu),0.0091
+Clef,no_markets,next_pm,government,other,Someone else,0.0366
+Clef,no_markets,netanyahu_remains_pm,government,true,true,0.7242
+Clef,no_markets,eisenkot_pm,government,true,true,0.1408
+Clef,with_markets,largest_list,result,likud,Likud,0.1082
+Clef,with_markets,largest_list,result,yashar,Yashar,0.7282
+Clef,with_markets,largest_list,result,together,Together (B'Yachad),0.0341
+Clef,with_markets,largest_list,result,other,Any other list,0.1295
+Clef,with_markets,yashar_largest,result,true,true,0.8783
+Clef,with_markets,second_list,result,likud,Likud,0.8013
+Clef,with_markets,second_list,result,yashar,Yashar,0.0528
+Clef,with_markets,second_list,result,together,Together (B'Yachad),0.0628
+Clef,with_markets,second_list,result,other,Any other list,0.0831
+Clef,with_markets,third_list,result,together,Together (B'Yachad),0.7459
+Clef,with_markets,third_list,result,democrats,The Democrats,0.0108
+Clef,with_markets,third_list,result,shas,Shas,0.0175
+Clef,with_markets,third_list,result,otzma,Otzma Yehudit,0.0155
+Clef,with_markets,third_list,result,likud_or_yashar,Likud or Yashar,0.1527
+Clef,with_markets,third_list,result,other,Any other list,0.0575
+Clef,with_markets,likud_below_32,result,true,true,0.9647
+Clef,with_markets,netanyahu_bloc_61,blocs,true,true,0.3277
+Clef,with_markets,opposition_zionist_61,blocs,true,true,0.1307
+Clef,with_markets,no_bloc_majority,blocs,true,true,0.8036
+Clef,with_markets,bloc_most_seats,blocs,netanyahu,"Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam)",0.4634
+Clef,with_markets,bloc_most_seats,blocs,opposition,"Zionist opposition (Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael)",0.5366
+Clef,with_markets,netanyahu_bloc_seats,blocs,0,50 or fewer,0.0981
+Clef,with_markets,netanyahu_bloc_seats,blocs,1,51-54,0.1833
+Clef,with_markets,netanyahu_bloc_seats,blocs,2,55-57,0.3478
+Clef,with_markets,netanyahu_bloc_seats,blocs,3,58-60,0.2833
+Clef,with_markets,netanyahu_bloc_seats,blocs,4,61-63,0.0776
+Clef,with_markets,netanyahu_bloc_seats,blocs,5,64 or more,0.01
+Clef,with_markets,seats_likud,seats,0,0 seats (below the threshold),0.0021
+Clef,with_markets,seats_likud,seats,4,4 seats,0.0012
+Clef,with_markets,seats_likud,seats,5,5 seats,0.0011
+Clef,with_markets,seats_likud,seats,6,6 seats,0.0013
+Clef,with_markets,seats_likud,seats,7,7 seats,0.0014
+Clef,with_markets,seats_likud,seats,8,8 seats,0.0011
+Clef,with_markets,seats_likud,seats,9,9 seats,0.0013
+Clef,with_markets,seats_likud,seats,10,10 seats,0.0016
+Clef,with_markets,seats_likud,seats,11,11 seats,0.0017
+Clef,with_markets,seats_likud,seats,12,12 seats,0.0022
+Clef,with_markets,seats_likud,seats,13,13 seats,0.0033
+Clef,with_markets,seats_likud,seats,14,14 seats,0.0059
+Clef,with_markets,seats_likud,seats,15,15 seats,0.0094
+Clef,with_markets,seats_likud,seats,16,16 seats,0.017
+Clef,with_markets,seats_likud,seats,17,17 seats,0.0164
+Clef,with_markets,seats_likud,seats,18,18 seats,0.0228
+Clef,with_markets,seats_likud,seats,19,19 seats,0.0433
+Clef,with_markets,seats_likud,seats,20,20 seats,0.0772
+Clef,with_markets,seats_likud,seats,21,21 seats,0.1019
+Clef,with_markets,seats_likud,seats,22,22 seats,0.1128
+Clef,with_markets,seats_likud,seats,23,23 seats,0.1824
+Clef,with_markets,seats_likud,seats,24,24 seats,0.1089
+Clef,with_markets,seats_likud,seats,25,25 seats,0.0597
+Clef,with_markets,seats_likud,seats,26,26 seats,0.0388
+Clef,with_markets,seats_likud,seats,27,27 seats,0.0427
+Clef,with_markets,seats_likud,seats,28,28 seats,0.0413
+Clef,with_markets,seats_likud,seats,29,29 seats,0.0404
+Clef,with_markets,seats_likud,seats,30,30 seats,0.028
+Clef,with_markets,seats_likud,seats,31,31 seats,0.0106
+Clef,with_markets,seats_likud,seats,32,32 seats,0.0078
+Clef,with_markets,seats_likud,seats,33,33 seats,0.0028
+Clef,with_markets,seats_likud,seats,34,34 seats,0.0035
+Clef,with_markets,seats_likud,seats,35,35 seats,0.0015
+Clef,with_markets,seats_likud,seats,36,36 seats,0.0013
+Clef,with_markets,seats_likud,seats,37,37 seats,0.0012
+Clef,with_markets,seats_likud,seats,38,38 seats,0.0012
+Clef,with_markets,seats_likud,seats,39,39 seats,0.0013
+Clef,with_markets,seats_likud,seats,40,40 or more seats,0.0014
+Clef,with_markets,seats_yashar,seats,0,0 seats (below the threshold),0.0039
+Clef,with_markets,seats_yashar,seats,4,4 seats,0.0014
+Clef,with_markets,seats_yashar,seats,5,5 seats,0.0014
+Clef,with_markets,seats_yashar,seats,6,6 seats,0.002
+Clef,with_markets,seats_yashar,seats,7,7 seats,0.0025
+Clef,with_markets,seats_yashar,seats,8,8 seats,0.0027
+Clef,with_markets,seats_yashar,seats,9,9 seats,0.0025
+Clef,with_markets,seats_yashar,seats,10,10 seats,0.0039
+Clef,with_markets,seats_yashar,seats,11,11 seats,0.0062
+Clef,with_markets,seats_yashar,seats,12,12 seats,0.0058
+Clef,with_markets,seats_yashar,seats,13,13 seats,0.0154
+Clef,with_markets,seats_yashar,seats,14,14 seats,0.0126
+Clef,with_markets,seats_yashar,seats,15,15 seats,0.0235
+Clef,with_markets,seats_yashar,seats,16,16 seats,0.014
+Clef,with_markets,seats_yashar,seats,17,17 seats,0.035
+Clef,with_markets,seats_yashar,seats,18,18 seats,0.0316
+Clef,with_markets,seats_yashar,seats,19,19 seats,0.0479
+Clef,with_markets,seats_yashar,seats,20,20 seats,0.1418
+Clef,with_markets,seats_yashar,seats,21,21 seats,0.1575
+Clef,with_markets,seats_yashar,seats,22,22 seats,0.148
+Clef,with_markets,seats_yashar,seats,23,23 seats,0.1831
+Clef,with_markets,seats_yashar,seats,24,24 seats,0.06
+Clef,with_markets,seats_yashar,seats,25,25 seats,0.0373
+Clef,with_markets,seats_yashar,seats,26,26 seats,0.013
+Clef,with_markets,seats_yashar,seats,27,27 seats,0.0055
+Clef,with_markets,seats_yashar,seats,28,28 seats,0.0104
+Clef,with_markets,seats_yashar,seats,29,29 seats,0.0033
+Clef,with_markets,seats_yashar,seats,30,30 seats,0.003
+Clef,with_markets,seats_yashar,seats,31,31 seats,0.0027
+Clef,with_markets,seats_yashar,seats,32,32 seats,0.0039
+Clef,with_markets,seats_yashar,seats,33,33 seats,0.0043
+Clef,with_markets,seats_yashar,seats,34,34 seats,0.0034
+Clef,with_markets,seats_yashar,seats,35,35 seats,0.0022
+Clef,with_markets,seats_yashar,seats,36,36 seats,0.0017
+Clef,with_markets,seats_yashar,seats,37,37 seats,0.0017
+Clef,with_markets,seats_yashar,seats,38,38 seats,0.0016
+Clef,with_markets,seats_yashar,seats,39,39 seats,0.0016
+Clef,with_markets,seats_yashar,seats,40,40 or more seats,0.0014
+Clef,with_markets,seats_together_b_yachad,seats,0,0 seats (below the threshold),0.0053
+Clef,with_markets,seats_together_b_yachad,seats,4,4 seats,0.0019
+Clef,with_markets,seats_together_b_yachad,seats,5,5 seats,0.0028
+Clef,with_markets,seats_together_b_yachad,seats,6,6 seats,0.0048
+Clef,with_markets,seats_together_b_yachad,seats,7,7 seats,0.0053
+Clef,with_markets,seats_together_b_yachad,seats,8,8 seats,0.0098
+Clef,with_markets,seats_together_b_yachad,seats,9,9 seats,0.0109
+Clef,with_markets,seats_together_b_yachad,seats,10,10 seats,0.1805
+Clef,with_markets,seats_together_b_yachad,seats,11,11 seats,0.1502
+Clef,with_markets,seats_together_b_yachad,seats,12,12 seats,0.2512
+Clef,with_markets,seats_together_b_yachad,seats,13,13 seats,0.1957
+Clef,with_markets,seats_together_b_yachad,seats,14,14 seats,0.0711
+Clef,with_markets,seats_together_b_yachad,seats,15,15 seats,0.052
+Clef,with_markets,seats_together_b_yachad,seats,16,16 seats,0.0201
+Clef,with_markets,seats_together_b_yachad,seats,17,17 seats,0.0107
+Clef,with_markets,seats_together_b_yachad,seats,18,18 seats,0.0057
+Clef,with_markets,seats_together_b_yachad,seats,19,19 seats,0.0032
+Clef,with_markets,seats_together_b_yachad,seats,20,20 seats,0.0037
+Clef,with_markets,seats_together_b_yachad,seats,21,21 seats,0.003
+Clef,with_markets,seats_together_b_yachad,seats,22,22 seats,0.0034
+Clef,with_markets,seats_together_b_yachad,seats,23,23 seats,0.0035
+Clef,with_markets,seats_together_b_yachad,seats,24,24 seats,0.0029
+Clef,with_markets,seats_together_b_yachad,seats,25,25 or more seats,0.0023
+Clef,with_markets,seats_the_democrats,seats,0,0 seats (below the threshold),0.0182
+Clef,with_markets,seats_the_democrats,seats,4,4 seats,0.0156
+Clef,with_markets,seats_the_democrats,seats,5,5 seats,0.0287
+Clef,with_markets,seats_the_democrats,seats,6,6 seats,0.0871
+Clef,with_markets,seats_the_democrats,seats,7,7 seats,0.1348
+Clef,with_markets,seats_the_democrats,seats,8,8 seats,0.2724
+Clef,with_markets,seats_the_democrats,seats,9,9 seats,0.3608
+Clef,with_markets,seats_the_democrats,seats,10,10 seats,0.02
+Clef,with_markets,seats_the_democrats,seats,11,11 seats,0.0123
+Clef,with_markets,seats_the_democrats,seats,12,12 seats,0.0123
+Clef,with_markets,seats_the_democrats,seats,13,13 seats,0.0062
+Clef,with_markets,seats_the_democrats,seats,14,14 seats,0.0051
+Clef,with_markets,seats_the_democrats,seats,15,15 seats,0.0043
+Clef,with_markets,seats_the_democrats,seats,16,16 seats,0.0045
+Clef,with_markets,seats_the_democrats,seats,17,17 seats,0.004
+Clef,with_markets,seats_the_democrats,seats,18,18 seats,0.0048
+Clef,with_markets,seats_the_democrats,seats,19,19 seats,0.0047
+Clef,with_markets,seats_the_democrats,seats,20,20 or more seats,0.0039
+Clef,with_markets,seats_shas,seats,0,0 seats (below the threshold),0.0213
+Clef,with_markets,seats_shas,seats,4,4 seats,0.0144
+Clef,with_markets,seats_shas,seats,5,5 seats,0.0386
+Clef,with_markets,seats_shas,seats,6,6 seats,0.0883
+Clef,with_markets,seats_shas,seats,7,7 seats,0.2202
+Clef,with_markets,seats_shas,seats,8,8 seats,0.2963
+Clef,with_markets,seats_shas,seats,9,9 seats,0.2476
+Clef,with_markets,seats_shas,seats,10,10 seats,0.022
+Clef,with_markets,seats_shas,seats,11,11 seats,0.022
+Clef,with_markets,seats_shas,seats,12,12 seats,0.0092
+Clef,with_markets,seats_shas,seats,13,13 seats,0.0067
+Clef,with_markets,seats_shas,seats,14,14 seats,0.0052
+Clef,with_markets,seats_shas,seats,15,15 seats,0.0039
+Clef,with_markets,seats_shas,seats,16,16 or more seats,0.0045
+Clef,with_markets,seats_united_torah_judaism,seats,0,0 seats (below the threshold),0.0524
+Clef,with_markets,seats_united_torah_judaism,seats,4,4 seats,0.0328
+Clef,with_markets,seats_united_torah_judaism,seats,5,5 seats,0.0695
+Clef,with_markets,seats_united_torah_judaism,seats,6,6 seats,0.1903
+Clef,with_markets,seats_united_torah_judaism,seats,7,7 seats,0.4323
+Clef,with_markets,seats_united_torah_judaism,seats,8,8 seats,0.136
+Clef,with_markets,seats_united_torah_judaism,seats,9,9 seats,0.055
+Clef,with_markets,seats_united_torah_judaism,seats,10,10 seats,0.0076
+Clef,with_markets,seats_united_torah_judaism,seats,11,11 seats,0.0078
+Clef,with_markets,seats_united_torah_judaism,seats,12,12 seats,0.0076
+Clef,with_markets,seats_united_torah_judaism,seats,13,13 seats,0.0047
+Clef,with_markets,seats_united_torah_judaism,seats,14,14 or more seats,0.004
+Clef,with_markets,seats_otzma_yehudit,seats,0,0 seats (below the threshold),0.0289
+Clef,with_markets,seats_otzma_yehudit,seats,4,4 seats,0.0239
+Clef,with_markets,seats_otzma_yehudit,seats,5,5 seats,0.0651
+Clef,with_markets,seats_otzma_yehudit,seats,6,6 seats,0.2523
+Clef,with_markets,seats_otzma_yehudit,seats,7,7 seats,0.3032
+Clef,with_markets,seats_otzma_yehudit,seats,8,8 seats,0.1853
+Clef,with_markets,seats_otzma_yehudit,seats,9,9 seats,0.0761
+Clef,with_markets,seats_otzma_yehudit,seats,10,10 seats,0.0111
+Clef,with_markets,seats_otzma_yehudit,seats,11,11 seats,0.0132
+Clef,with_markets,seats_otzma_yehudit,seats,12,12 seats,0.0134
+Clef,with_markets,seats_otzma_yehudit,seats,13,13 seats,0.0083
+Clef,with_markets,seats_otzma_yehudit,seats,14,14 seats,0.0073
+Clef,with_markets,seats_otzma_yehudit,seats,15,15 seats,0.0066
+Clef,with_markets,seats_otzma_yehudit,seats,16,16 or more seats,0.0052
+Clef,with_markets,seats_yisrael_beiteinu,seats,0,0 seats (below the threshold),0.0361
+Clef,with_markets,seats_yisrael_beiteinu,seats,4,4 seats,0.0665
+Clef,with_markets,seats_yisrael_beiteinu,seats,5,5 seats,0.1385
+Clef,with_markets,seats_yisrael_beiteinu,seats,6,6 seats,0.2528
+Clef,with_markets,seats_yisrael_beiteinu,seats,7,7 seats,0.2356
+Clef,with_markets,seats_yisrael_beiteinu,seats,8,8 seats,0.1429
+Clef,with_markets,seats_yisrael_beiteinu,seats,9,9 seats,0.0847
+Clef,with_markets,seats_yisrael_beiteinu,seats,10,10 seats,0.0094
+Clef,with_markets,seats_yisrael_beiteinu,seats,11,11 seats,0.0067
+Clef,with_markets,seats_yisrael_beiteinu,seats,12,12 seats,0.0089
+Clef,with_markets,seats_yisrael_beiteinu,seats,13,13 seats,0.0057
+Clef,with_markets,seats_yisrael_beiteinu,seats,14,14 seats,0.0052
+Clef,with_markets,seats_yisrael_beiteinu,seats,15,15 seats,0.0041
+Clef,with_markets,seats_yisrael_beiteinu,seats,16,16 or more seats,0.0031
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,0,0 seats (below the threshold),0.0427
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,4,4 seats,0.0499
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,5,5 seats,0.1124
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,6,6 seats,0.2574
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,7,7 seats,0.274
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,8,8 seats,0.1081
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,9,9 seats,0.0761
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,10,10 seats,0.0132
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,11,11 seats,0.0178
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,12,12 seats,0.0181
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,13,13 seats,0.0186
+Clef,with_markets,seats_religious_zionist_party__zehut,seats,14,14 or more seats,0.0117
+Clef,with_markets,seats_joint_list,seats,0,0 seats (below the threshold),0.0287
+Clef,with_markets,seats_joint_list,seats,4,4 seats,0.021
+Clef,with_markets,seats_joint_list,seats,5,5 seats,0.0497
+Clef,with_markets,seats_joint_list,seats,6,6 seats,0.1268
+Clef,with_markets,seats_joint_list,seats,7,7 seats,0.2158
+Clef,with_markets,seats_joint_list,seats,8,8 seats,0.2297
+Clef,with_markets,seats_joint_list,seats,9,9 seats,0.1035
+Clef,with_markets,seats_joint_list,seats,10,10 seats,0.0474
+Clef,with_markets,seats_joint_list,seats,11,11 seats,0.0425
+Clef,with_markets,seats_joint_list,seats,12,12 seats,0.0369
+Clef,with_markets,seats_joint_list,seats,13,13 seats,0.0381
+Clef,with_markets,seats_joint_list,seats,14,14 or more seats,0.0599
+Clef,with_markets,seats_united_arab_list_ra_am,seats,0,0 seats (below the threshold),0.0902
+Clef,with_markets,seats_united_arab_list_ra_am,seats,4,4 seats,0.0841
+Clef,with_markets,seats_united_arab_list_ra_am,seats,5,5 seats,0.2164
+Clef,with_markets,seats_united_arab_list_ra_am,seats,6,6 seats,0.2736
+Clef,with_markets,seats_united_arab_list_ra_am,seats,7,7 seats,0.1397
+Clef,with_markets,seats_united_arab_list_ra_am,seats,8,8 seats,0.0714
+Clef,with_markets,seats_united_arab_list_ra_am,seats,9,9 seats,0.0468
+Clef,with_markets,seats_united_arab_list_ra_am,seats,10,10 seats,0.0225
+Clef,with_markets,seats_united_arab_list_ra_am,seats,11,11 seats,0.0235
+Clef,with_markets,seats_united_arab_list_ra_am,seats,12,12 or more seats,0.0317
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,0,0 seats (below the threshold),0.6518
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,4,4 seats,0.1515
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,5,5 seats,0.0792
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,6,6 seats,0.0536
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,7,7 seats,0.0194
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,8,8 seats,0.0133
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,9,9 seats,0.0095
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,10,10 seats,0.0089
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,11,11 seats,0.0071
+Clef,with_markets,seats_the_reservists_and_the_economic_party,seats,12,12 or more seats,0.0056
+Clef,with_markets,seats_amcha_yisrael,seats,0,0 seats (below the threshold),0.8112
+Clef,with_markets,seats_amcha_yisrael,seats,4,4 seats,0.0785
+Clef,with_markets,seats_amcha_yisrael,seats,5,5 seats,0.0391
+Clef,with_markets,seats_amcha_yisrael,seats,6,6 seats,0.0305
+Clef,with_markets,seats_amcha_yisrael,seats,7,7 seats,0.0099
+Clef,with_markets,seats_amcha_yisrael,seats,8,8 seats,0.0075
+Clef,with_markets,seats_amcha_yisrael,seats,9,9 seats,0.0062
+Clef,with_markets,seats_amcha_yisrael,seats,10,10 seats,0.0085
+Clef,with_markets,seats_amcha_yisrael,seats,11,11 seats,0.0039
+Clef,with_markets,seats_amcha_yisrael,seats,12,12 or more seats,0.0048
+Clef,with_markets,passes_the_reservists_and_the_economic_party,threshold,true,true,0.3324
+Clef,with_markets,passes_amcha_yisrael,threshold,true,true,0.0906
+Clef,with_markets,passes_religious_zionist_party__zehut,threshold,true,true,0.9124
+Clef,with_markets,passes_united_arab_list_ra_am,threshold,true,true,0.954
+Clef,with_markets,passes_yisrael_beiteinu,threshold,true,true,0.8939
+Clef,with_markets,passes_joint_list,threshold,true,true,0.9627
+Clef,with_markets,passes_noam,threshold,true,true,0.0128
+Clef,with_markets,passes_israel_first,threshold,true,true,0.0074
+Clef,with_markets,passes_haredi_public,threshold,true,true,0.0092
+Clef,with_markets,lists_passing,threshold,0,9 or fewer,0.0342
+Clef,with_markets,lists_passing,threshold,1,10,0.1053
+Clef,with_markets,lists_passing,threshold,2,11,0.2144
+Clef,with_markets,lists_passing,threshold,3,12,0.2689
+Clef,with_markets,lists_passing,threshold,4,13,0.23
+Clef,with_markets,lists_passing,threshold,5,14 or more,0.1473
+Clef,with_markets,reservists_and_amcha_both_fail,threshold,true,true,0.6305
+Clef,with_markets,turnout_below_2022,turnout,true,true,0.4902
+Clef,with_markets,votes_cast,turnout,0,under 4.9 million,0.0216
+Clef,with_markets,votes_cast,turnout,1,4.9-5.1 million,0.1675
+Clef,with_markets,votes_cast,turnout,2,5.1-5.2 million,0.2682
+Clef,with_markets,votes_cast,turnout,3,5.2-5.3 million,0.4122
+Clef,with_markets,votes_cast,turnout,4,5.3-5.4 million,0.0977
+Clef,with_markets,votes_cast,turnout,5,5.4-5.5 million,0.0249
+Clef,with_markets,votes_cast,turnout,6,5.5 million or more,0.0078
+Clef,with_markets,next_pm,government,netanyahu,Benjamin Netanyahu (Likud),0.3638
+Clef,with_markets,next_pm,government,eisenkot,Gadi Eisenkot (Yashar),0.5509
+Clef,with_markets,next_pm,government,bennett,Naftali Bennett (Together),0.0475
+Clef,with_markets,next_pm,government,lieberman,Avigdor Lieberman (Yisrael Beiteinu),0.0124
+Clef,with_markets,next_pm,government,other,Someone else,0.0254
+Clef,with_markets,netanyahu_remains_pm,government,true,true,0.3413
+Clef,with_markets,eisenkot_pm,government,true,true,0.7509
+Jev 1.14,no_markets,largest_list,result,likud,Likud,0.87
+Jev 1.14,no_markets,largest_list,result,yashar,Yashar,0.12
+Jev 1.14,no_markets,largest_list,result,together,Together (B'Yachad),0
+Jev 1.14,no_markets,largest_list,result,other,Any other list,0.01
+Jev 1.14,no_markets,yashar_largest,result,true,true,0.39
+Jev 1.14,no_markets,second_list,result,likud,Likud,0.07
+Jev 1.14,no_markets,second_list,result,yashar,Yashar,0.89
+Jev 1.14,no_markets,second_list,result,together,Together (B'Yachad),0.01
+Jev 1.14,no_markets,second_list,result,other,Any other list,0.03
+Jev 1.14,no_markets,third_list,result,together,Together (B'Yachad),0.49
+Jev 1.14,no_markets,third_list,result,democrats,The Democrats,0.03
+Jev 1.14,no_markets,third_list,result,shas,Shas,0.07
+Jev 1.14,no_markets,third_list,result,otzma,Otzma Yehudit,0.04
+Jev 1.14,no_markets,third_list,result,likud_or_yashar,Likud or Yashar,0.24
+Jev 1.14,no_markets,third_list,result,other,Any other list,0.13
+Jev 1.14,no_markets,likud_below_32,result,true,true,0.78
+Jev 1.14,no_markets,netanyahu_bloc_61,blocs,true,true,0.54
+Jev 1.14,no_markets,opposition_zionist_61,blocs,true,true,0.75
+Jev 1.14,no_markets,no_bloc_majority,blocs,true,true,0.56
+Jev 1.14,no_markets,bloc_most_seats,blocs,netanyahu,"Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam)",0.48
+Jev 1.14,no_markets,bloc_most_seats,blocs,opposition,"Zionist opposition (Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael)",0.52
+Jev 1.14,no_markets,netanyahu_bloc_seats,blocs,0,50 or fewer,0.03
+Jev 1.14,no_markets,netanyahu_bloc_seats,blocs,1,51-54,0.02
+Jev 1.14,no_markets,netanyahu_bloc_seats,blocs,2,55-57,0.05
+Jev 1.14,no_markets,netanyahu_bloc_seats,blocs,3,58-60,0.08
+Jev 1.14,no_markets,netanyahu_bloc_seats,blocs,4,61-63,0.8
+Jev 1.14,no_markets,netanyahu_bloc_seats,blocs,5,64 or more,0.02
+Jev 1.14,no_markets,seats_likud,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_likud,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_likud,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_likud,seats,6,6 seats,0
+Jev 1.14,no_markets,seats_likud,seats,7,7 seats,0
+Jev 1.14,no_markets,seats_likud,seats,8,8 seats,0
+Jev 1.14,no_markets,seats_likud,seats,9,9 seats,0
+Jev 1.14,no_markets,seats_likud,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_likud,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_likud,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_likud,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_likud,seats,14,14 seats,0
+Jev 1.14,no_markets,seats_likud,seats,15,15 seats,0
+Jev 1.14,no_markets,seats_likud,seats,16,16 seats,0
+Jev 1.14,no_markets,seats_likud,seats,17,17 seats,0
+Jev 1.14,no_markets,seats_likud,seats,18,18 seats,0.01
+Jev 1.14,no_markets,seats_likud,seats,19,19 seats,0.02
+Jev 1.14,no_markets,seats_likud,seats,20,20 seats,0.04
+Jev 1.14,no_markets,seats_likud,seats,21,21 seats,0.02
+Jev 1.14,no_markets,seats_likud,seats,22,22 seats,0
+Jev 1.14,no_markets,seats_likud,seats,23,23 seats,0.01
+Jev 1.14,no_markets,seats_likud,seats,24,24 seats,0.01
+Jev 1.14,no_markets,seats_likud,seats,25,25 seats,0.01
+Jev 1.14,no_markets,seats_likud,seats,26,26 seats,0.02
+Jev 1.14,no_markets,seats_likud,seats,27,27 seats,0.02
+Jev 1.14,no_markets,seats_likud,seats,28,28 seats,0.03
+Jev 1.14,no_markets,seats_likud,seats,29,29 seats,0.05
+Jev 1.14,no_markets,seats_likud,seats,30,30 seats,0.68
+Jev 1.14,no_markets,seats_likud,seats,31,31 seats,0.03
+Jev 1.14,no_markets,seats_likud,seats,32,32 seats,0.03
+Jev 1.14,no_markets,seats_likud,seats,33,33 seats,0.01
+Jev 1.14,no_markets,seats_likud,seats,34,34 seats,0
+Jev 1.14,no_markets,seats_likud,seats,35,35 seats,0
+Jev 1.14,no_markets,seats_likud,seats,36,36 seats,0
+Jev 1.14,no_markets,seats_likud,seats,37,37 seats,0
+Jev 1.14,no_markets,seats_likud,seats,38,38 seats,0
+Jev 1.14,no_markets,seats_likud,seats,39,39 seats,0
+Jev 1.14,no_markets,seats_likud,seats,40,40 or more seats,0
+Jev 1.14,no_markets,seats_yashar,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_yashar,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,6,6 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,7,7 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,8,8 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,9,9 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,14,14 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,15,15 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,16,16 seats,0.01
+Jev 1.14,no_markets,seats_yashar,seats,17,17 seats,0.01
+Jev 1.14,no_markets,seats_yashar,seats,18,18 seats,0.01
+Jev 1.14,no_markets,seats_yashar,seats,19,19 seats,0.03
+Jev 1.14,no_markets,seats_yashar,seats,20,20 seats,0.45
+Jev 1.14,no_markets,seats_yashar,seats,21,21 seats,0.2
+Jev 1.14,no_markets,seats_yashar,seats,22,22 seats,0.13
+Jev 1.14,no_markets,seats_yashar,seats,23,23 seats,0.12
+Jev 1.14,no_markets,seats_yashar,seats,24,24 seats,0.03
+Jev 1.14,no_markets,seats_yashar,seats,25,25 seats,0.01
+Jev 1.14,no_markets,seats_yashar,seats,26,26 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,27,27 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,28,28 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,29,29 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,30,30 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,31,31 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,32,32 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,33,33 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,34,34 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,35,35 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,36,36 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,37,37 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,38,38 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,39,39 seats,0
+Jev 1.14,no_markets,seats_yashar,seats,40,40 or more seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,0,0 seats (below the threshold),0.01
+Jev 1.14,no_markets,seats_together_b_yachad,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,6,6 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,7,7 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,8,8 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,9,9 seats,0.04
+Jev 1.14,no_markets,seats_together_b_yachad,seats,10,10 seats,0.07
+Jev 1.14,no_markets,seats_together_b_yachad,seats,11,11 seats,0.44
+Jev 1.14,no_markets,seats_together_b_yachad,seats,12,12 seats,0.21000000000000002
+Jev 1.14,no_markets,seats_together_b_yachad,seats,13,13 seats,0.12
+Jev 1.14,no_markets,seats_together_b_yachad,seats,14,14 seats,0.06
+Jev 1.14,no_markets,seats_together_b_yachad,seats,15,15 seats,0.04
+Jev 1.14,no_markets,seats_together_b_yachad,seats,16,16 seats,0.01
+Jev 1.14,no_markets,seats_together_b_yachad,seats,17,17 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,18,18 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,19,19 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,20,20 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,21,21 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,22,22 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,23,23 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,24,24 seats,0
+Jev 1.14,no_markets,seats_together_b_yachad,seats,25,25 or more seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_the_democrats,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,6,6 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,7,7 seats,0.01
+Jev 1.14,no_markets,seats_the_democrats,seats,8,8 seats,0.31
+Jev 1.14,no_markets,seats_the_democrats,seats,9,9 seats,0.6
+Jev 1.14,no_markets,seats_the_democrats,seats,10,10 seats,0.05
+Jev 1.14,no_markets,seats_the_democrats,seats,11,11 seats,0.01
+Jev 1.14,no_markets,seats_the_democrats,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,14,14 seats,0.01
+Jev 1.14,no_markets,seats_the_democrats,seats,15,15 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,16,16 seats,0.01
+Jev 1.14,no_markets,seats_the_democrats,seats,17,17 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,18,18 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,19,19 seats,0
+Jev 1.14,no_markets,seats_the_democrats,seats,20,20 or more seats,0
+Jev 1.14,no_markets,seats_shas,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_shas,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_shas,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_shas,seats,6,6 seats,0
+Jev 1.14,no_markets,seats_shas,seats,7,7 seats,0.02
+Jev 1.14,no_markets,seats_shas,seats,8,8 seats,0.16
+Jev 1.14,no_markets,seats_shas,seats,9,9 seats,0.65
+Jev 1.14,no_markets,seats_shas,seats,10,10 seats,0.15000000000000002
+Jev 1.14,no_markets,seats_shas,seats,11,11 seats,0.02
+Jev 1.14,no_markets,seats_shas,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_shas,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_shas,seats,14,14 seats,0
+Jev 1.14,no_markets,seats_shas,seats,15,15 seats,0
+Jev 1.14,no_markets,seats_shas,seats,16,16 or more seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,6,6 seats,0.01
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,7,7 seats,0.13
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,8,8 seats,0.85
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,9,9 seats,0.01
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_united_torah_judaism,seats,14,14 or more seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,4,4 seats,0.01
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,5,5 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,6,6 seats,0.02
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,7,7 seats,0.06999999999999999
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,8,8 seats,0.87
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,9,9 seats,0.03
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,14,14 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,15,15 seats,0
+Jev 1.14,no_markets,seats_otzma_yehudit,seats,16,16 or more seats,0
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,4,4 seats,0.02
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,5,5 seats,0.05
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,6,6 seats,0.11
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,7,7 seats,0.08
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,8,8 seats,0.59
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,9,9 seats,0.05
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,10,10 seats,0.04
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,11,11 seats,0.02
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,12,12 seats,0.01
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,13,13 seats,0.01
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,14,14 seats,0.01
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,15,15 seats,0.01
+Jev 1.14,no_markets,seats_yisrael_beiteinu,seats,16,16 or more seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,4,4 seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,5,5 seats,0.01
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,6,6 seats,0.11
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,7,7 seats,0.85
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,8,8 seats,0.03
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,9,9 seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_religious_zionist_party__zehut,seats,14,14 or more seats,0
+Jev 1.14,no_markets,seats_joint_list,seats,0,0 seats (below the threshold),0
+Jev 1.14,no_markets,seats_joint_list,seats,4,4 seats,0.01
+Jev 1.14,no_markets,seats_joint_list,seats,5,5 seats,0.01
+Jev 1.14,no_markets,seats_joint_list,seats,6,6 seats,0.07
+Jev 1.14,no_markets,seats_joint_list,seats,7,7 seats,0.02
+Jev 1.14,no_markets,seats_joint_list,seats,8,8 seats,0.81
+Jev 1.14,no_markets,seats_joint_list,seats,9,9 seats,0.06
+Jev 1.14,no_markets,seats_joint_list,seats,10,10 seats,0.01
+Jev 1.14,no_markets,seats_joint_list,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_joint_list,seats,12,12 seats,0
+Jev 1.14,no_markets,seats_joint_list,seats,13,13 seats,0
+Jev 1.14,no_markets,seats_joint_list,seats,14,14 or more seats,0
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,0,0 seats (below the threshold),0.01
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,4,4 seats,0.01
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,5,5 seats,0.19
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,6,6 seats,0.77
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,7,7 seats,0.01
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,8,8 seats,0.01
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,9,9 seats,0
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_united_arab_list_ra_am,seats,12,12 or more seats,0
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,0,0 seats (below the threshold),0.45
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,4,4 seats,0.37
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,5,5 seats,0.14
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,6,6 seats,0.01
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,7,7 seats,0.01
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,8,8 seats,0.01
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,9,9 seats,0.01
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_the_reservists_and_the_economic_party,seats,12,12 or more seats,0
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,0,0 seats (below the threshold),0.87
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,4,4 seats,0.08
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,5,5 seats,0.02
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,6,6 seats,0.01
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,7,7 seats,0.01
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,8,8 seats,0.01
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,9,9 seats,0
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,10,10 seats,0
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,11,11 seats,0
+Jev 1.14,no_markets,seats_amcha_yisrael,seats,12,12 or more seats,0
+Jev 1.14,no_markets,passes_the_reservists_and_the_economic_party,threshold,true,true,0.38
+Jev 1.14,no_markets,passes_amcha_yisrael,threshold,true,true,0.27
+Jev 1.14,no_markets,passes_religious_zionist_party__zehut,threshold,true,true,0.89
+Jev 1.14,no_markets,passes_united_arab_list_ra_am,threshold,true,true,0.83
+Jev 1.14,no_markets,passes_yisrael_beiteinu,threshold,true,true,0.91
+Jev 1.14,no_markets,passes_joint_list,threshold,true,true,0.89
+Jev 1.14,no_markets,passes_noam,threshold,true,true,0.53
+Jev 1.14,no_markets,passes_israel_first,threshold,true,true,0.17
+Jev 1.14,no_markets,passes_haredi_public,threshold,true,true,0.08
+Jev 1.14,no_markets,lists_passing,threshold,0,9 or fewer,0.03
+Jev 1.14,no_markets,lists_passing,threshold,1,10,0.11
+Jev 1.14,no_markets,lists_passing,threshold,2,11,0.33
+Jev 1.14,no_markets,lists_passing,threshold,3,12,0.33
+Jev 1.14,no_markets,lists_passing,threshold,4,13,0.08
+Jev 1.14,no_markets,lists_passing,threshold,5,14 or more,0.12
+Jev 1.14,no_markets,reservists_and_amcha_both_fail,threshold,true,true,0.52
+Jev 1.14,no_markets,turnout_below_2022,turnout,true,true,0.56
+Jev 1.14,no_markets,votes_cast,turnout,0,under 4.9 million,0.11
+Jev 1.14,no_markets,votes_cast,turnout,1,4.9-5.1 million,0.07
+Jev 1.14,no_markets,votes_cast,turnout,2,5.1-5.2 million,0.13
+Jev 1.14,no_markets,votes_cast,turnout,3,5.2-5.3 million,0.19999999999999998
+Jev 1.14,no_markets,votes_cast,turnout,4,5.3-5.4 million,0.17
+Jev 1.14,no_markets,votes_cast,turnout,5,5.4-5.5 million,0.15
+Jev 1.14,no_markets,votes_cast,turnout,6,5.5 million or more,0.17
+Jev 1.14,no_markets,next_pm,government,netanyahu,Benjamin Netanyahu (Likud),0.49
+Jev 1.14,no_markets,next_pm,government,eisenkot,Gadi Eisenkot (Yashar),0.11
+Jev 1.14,no_markets,next_pm,government,bennett,Naftali Bennett (Together),0.02
+Jev 1.14,no_markets,next_pm,government,lieberman,Avigdor Lieberman (Yisrael Beiteinu),0
+Jev 1.14,no_markets,next_pm,government,other,Someone else,0.38
+Jev 1.14,no_markets,netanyahu_remains_pm,government,true,true,0.55
+Jev 1.14,no_markets,eisenkot_pm,government,true,true,0.27
+Jev 1.14,with_markets,largest_list,result,likud,Likud,0.04
+Jev 1.14,with_markets,largest_list,result,yashar,Yashar,0.96
+Jev 1.14,with_markets,largest_list,result,together,Together (B'Yachad),0
+Jev 1.14,with_markets,largest_list,result,other,Any other list,0
+Jev 1.14,with_markets,yashar_largest,result,true,true,0.63
+Jev 1.14,with_markets,second_list,result,likud,Likud,0.8
+Jev 1.14,with_markets,second_list,result,yashar,Yashar,0.15
+Jev 1.14,with_markets,second_list,result,together,Together (B'Yachad),0.01
+Jev 1.14,with_markets,second_list,result,other,Any other list,0.04
+Jev 1.14,with_markets,third_list,result,together,Together (B'Yachad),0.91
+Jev 1.14,with_markets,third_list,result,democrats,The Democrats,0.01
+Jev 1.14,with_markets,third_list,result,shas,Shas,0.03
+Jev 1.14,with_markets,third_list,result,otzma,Otzma Yehudit,0.01
+Jev 1.14,with_markets,third_list,result,likud_or_yashar,Likud or Yashar,0.02
+Jev 1.14,with_markets,third_list,result,other,Any other list,0.02
+Jev 1.14,with_markets,likud_below_32,result,true,true,0.79
+Jev 1.14,with_markets,netanyahu_bloc_61,blocs,true,true,0.54
+Jev 1.14,with_markets,opposition_zionist_61,blocs,true,true,0.6
+Jev 1.14,with_markets,no_bloc_majority,blocs,true,true,0.52
+Jev 1.14,with_markets,bloc_most_seats,blocs,netanyahu,"Netanyahu bloc (Likud, Shas, United Torah Judaism, Otzma Yehudit, Religious Zionist Party – Zehut, Noam)",0.26
+Jev 1.14,with_markets,bloc_most_seats,blocs,opposition,"Zionist opposition (Yashar, Together (B'Yachad), The Democrats, Yisrael Beiteinu, The Reservists and the Economic Party, Amcha Yisrael)",0.74
+Jev 1.14,with_markets,netanyahu_bloc_seats,blocs,0,50 or fewer,0.04
+Jev 1.14,with_markets,netanyahu_bloc_seats,blocs,1,51-54,0.02
+Jev 1.14,with_markets,netanyahu_bloc_seats,blocs,2,55-57,0.05
+Jev 1.14,with_markets,netanyahu_bloc_seats,blocs,3,58-60,0.13
+Jev 1.14,with_markets,netanyahu_bloc_seats,blocs,4,61-63,0.73
+Jev 1.14,with_markets,netanyahu_bloc_seats,blocs,5,64 or more,0.03
+Jev 1.14,with_markets,seats_likud,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_likud,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_likud,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_likud,seats,6,6 seats,0
+Jev 1.14,with_markets,seats_likud,seats,7,7 seats,0
+Jev 1.14,with_markets,seats_likud,seats,8,8 seats,0
+Jev 1.14,with_markets,seats_likud,seats,9,9 seats,0
+Jev 1.14,with_markets,seats_likud,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_likud,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_likud,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_likud,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_likud,seats,14,14 seats,0
+Jev 1.14,with_markets,seats_likud,seats,15,15 seats,0
+Jev 1.14,with_markets,seats_likud,seats,16,16 seats,0
+Jev 1.14,with_markets,seats_likud,seats,17,17 seats,0
+Jev 1.14,with_markets,seats_likud,seats,18,18 seats,0.01
+Jev 1.14,with_markets,seats_likud,seats,19,19 seats,0.01
+Jev 1.14,with_markets,seats_likud,seats,20,20 seats,0.16
+Jev 1.14,with_markets,seats_likud,seats,21,21 seats,0.15000000000000002
+Jev 1.14,with_markets,seats_likud,seats,22,22 seats,0.06
+Jev 1.14,with_markets,seats_likud,seats,23,23 seats,0.09
+Jev 1.14,with_markets,seats_likud,seats,24,24 seats,0.07
+Jev 1.14,with_markets,seats_likud,seats,25,25 seats,0.01
+Jev 1.14,with_markets,seats_likud,seats,26,26 seats,0.09999999999999999
+Jev 1.14,with_markets,seats_likud,seats,27,27 seats,0.02
+Jev 1.14,with_markets,seats_likud,seats,28,28 seats,0.01
+Jev 1.14,with_markets,seats_likud,seats,29,29 seats,0.02
+Jev 1.14,with_markets,seats_likud,seats,30,30 seats,0.27
+Jev 1.14,with_markets,seats_likud,seats,31,31 seats,0.01
+Jev 1.14,with_markets,seats_likud,seats,32,32 seats,0.01
+Jev 1.14,with_markets,seats_likud,seats,33,33 seats,0
+Jev 1.14,with_markets,seats_likud,seats,34,34 seats,0
+Jev 1.14,with_markets,seats_likud,seats,35,35 seats,0
+Jev 1.14,with_markets,seats_likud,seats,36,36 seats,0
+Jev 1.14,with_markets,seats_likud,seats,37,37 seats,0
+Jev 1.14,with_markets,seats_likud,seats,38,38 seats,0
+Jev 1.14,with_markets,seats_likud,seats,39,39 seats,0
+Jev 1.14,with_markets,seats_likud,seats,40,40 or more seats,0
+Jev 1.14,with_markets,seats_yashar,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_yashar,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,6,6 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,7,7 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,8,8 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,9,9 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,14,14 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,15,15 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,16,16 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,17,17 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,18,18 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,19,19 seats,0.01
+Jev 1.14,with_markets,seats_yashar,seats,20,20 seats,0.32
+Jev 1.14,with_markets,seats_yashar,seats,21,21 seats,0.28
+Jev 1.14,with_markets,seats_yashar,seats,22,22 seats,0.16
+Jev 1.14,with_markets,seats_yashar,seats,23,23 seats,0.2
+Jev 1.14,with_markets,seats_yashar,seats,24,24 seats,0.03
+Jev 1.14,with_markets,seats_yashar,seats,25,25 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,26,26 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,27,27 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,28,28 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,29,29 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,30,30 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,31,31 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,32,32 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,33,33 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,34,34 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,35,35 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,36,36 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,37,37 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,38,38 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,39,39 seats,0
+Jev 1.14,with_markets,seats_yashar,seats,40,40 or more seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,6,6 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,7,7 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,8,8 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,9,9 seats,0.02
+Jev 1.14,with_markets,seats_together_b_yachad,seats,10,10 seats,0.04
+Jev 1.14,with_markets,seats_together_b_yachad,seats,11,11 seats,0.25
+Jev 1.14,with_markets,seats_together_b_yachad,seats,12,12 seats,0.28
+Jev 1.14,with_markets,seats_together_b_yachad,seats,13,13 seats,0.3
+Jev 1.14,with_markets,seats_together_b_yachad,seats,14,14 seats,0.08
+Jev 1.14,with_markets,seats_together_b_yachad,seats,15,15 seats,0.03
+Jev 1.14,with_markets,seats_together_b_yachad,seats,16,16 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,17,17 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,18,18 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,19,19 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,20,20 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,21,21 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,22,22 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,23,23 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,24,24 seats,0
+Jev 1.14,with_markets,seats_together_b_yachad,seats,25,25 or more seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_the_democrats,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,6,6 seats,0.01
+Jev 1.14,with_markets,seats_the_democrats,seats,7,7 seats,0.04
+Jev 1.14,with_markets,seats_the_democrats,seats,8,8 seats,0.3
+Jev 1.14,with_markets,seats_the_democrats,seats,9,9 seats,0.62
+Jev 1.14,with_markets,seats_the_democrats,seats,10,10 seats,0.03
+Jev 1.14,with_markets,seats_the_democrats,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,14,14 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,15,15 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,16,16 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,17,17 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,18,18 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,19,19 seats,0
+Jev 1.14,with_markets,seats_the_democrats,seats,20,20 or more seats,0
+Jev 1.14,with_markets,seats_shas,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_shas,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_shas,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_shas,seats,6,6 seats,0.01
+Jev 1.14,with_markets,seats_shas,seats,7,7 seats,0.14
+Jev 1.14,with_markets,seats_shas,seats,8,8 seats,0.29
+Jev 1.14,with_markets,seats_shas,seats,9,9 seats,0.48
+Jev 1.14,with_markets,seats_shas,seats,10,10 seats,0.07
+Jev 1.14,with_markets,seats_shas,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_shas,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_shas,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_shas,seats,14,14 seats,0.01
+Jev 1.14,with_markets,seats_shas,seats,15,15 seats,0
+Jev 1.14,with_markets,seats_shas,seats,16,16 or more seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,6,6 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,7,7 seats,0.14
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,8,8 seats,0.85
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,9,9 seats,0.01
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_united_torah_judaism,seats,14,14 or more seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,4,4 seats,0.01
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,5,5 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,6,6 seats,0.02
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,7,7 seats,0.11
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,8,8 seats,0.84
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,9,9 seats,0.02
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,14,14 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,15,15 seats,0
+Jev 1.14,with_markets,seats_otzma_yehudit,seats,16,16 or more seats,0
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,4,4 seats,0.01
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,5,5 seats,0.03
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,6,6 seats,0.18
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,7,7 seats,0.39
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,8,8 seats,0.32
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,9,9 seats,0.04
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,10,10 seats,0.02
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,14,14 seats,0.01
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,15,15 seats,0
+Jev 1.14,with_markets,seats_yisrael_beiteinu,seats,16,16 or more seats,0
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,0,0 seats (below the threshold),0.05
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,4,4 seats,0.01
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,5,5 seats,0.05
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,6,6 seats,0.25
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,7,7 seats,0.61
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,8,8 seats,0.03
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,9,9 seats,0
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_religious_zionist_party__zehut,seats,14,14 or more seats,0
+Jev 1.14,with_markets,seats_joint_list,seats,0,0 seats (below the threshold),0
+Jev 1.14,with_markets,seats_joint_list,seats,4,4 seats,0
+Jev 1.14,with_markets,seats_joint_list,seats,5,5 seats,0.01
+Jev 1.14,with_markets,seats_joint_list,seats,6,6 seats,0.04
+Jev 1.14,with_markets,seats_joint_list,seats,7,7 seats,0.04
+Jev 1.14,with_markets,seats_joint_list,seats,8,8 seats,0.8
+Jev 1.14,with_markets,seats_joint_list,seats,9,9 seats,0.09999999999999999
+Jev 1.14,with_markets,seats_joint_list,seats,10,10 seats,0.01
+Jev 1.14,with_markets,seats_joint_list,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_joint_list,seats,12,12 seats,0
+Jev 1.14,with_markets,seats_joint_list,seats,13,13 seats,0
+Jev 1.14,with_markets,seats_joint_list,seats,14,14 or more seats,0
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,0,0 seats (below the threshold),0.01
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,4,4 seats,0.02
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,5,5 seats,0.3
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,6,6 seats,0.64
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,7,7 seats,0.02
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,8,8 seats,0.01
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,9,9 seats,0
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_united_arab_list_ra_am,seats,12,12 or more seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,0,0 seats (below the threshold),0.4
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,4,4 seats,0.51
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,5,5 seats,0.09
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,6,6 seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,7,7 seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,8,8 seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,9,9 seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_the_reservists_and_the_economic_party,seats,12,12 or more seats,0
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,0,0 seats (below the threshold),0.89
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,4,4 seats,0.09
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,5,5 seats,0.01
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,6,6 seats,0
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,7,7 seats,0
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,8,8 seats,0.01
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,9,9 seats,0
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,10,10 seats,0
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,11,11 seats,0
+Jev 1.14,with_markets,seats_amcha_yisrael,seats,12,12 or more seats,0
+Jev 1.14,with_markets,passes_the_reservists_and_the_economic_party,threshold,true,true,0.38
+Jev 1.14,with_markets,passes_amcha_yisrael,threshold,true,true,0.24
+Jev 1.14,with_markets,passes_religious_zionist_party__zehut,threshold,true,true,0.81
+Jev 1.14,with_markets,passes_united_arab_list_ra_am,threshold,true,true,0.87
+Jev 1.14,with_markets,passes_yisrael_beiteinu,threshold,true,true,0.92
+Jev 1.14,with_markets,passes_joint_list,threshold,true,true,0.91
+Jev 1.14,with_markets,passes_noam,threshold,true,true,0.14
+Jev 1.14,with_markets,passes_israel_first,threshold,true,true,0.09
+Jev 1.14,with_markets,passes_haredi_public,threshold,true,true,0.08
+Jev 1.14,with_markets,lists_passing,threshold,0,9 or fewer,0.01
+Jev 1.14,with_markets,lists_passing,threshold,1,10,0.02
+Jev 1.14,with_markets,lists_passing,threshold,2,11,0.17
+Jev 1.14,with_markets,lists_passing,threshold,3,12,0.46
+Jev 1.14,with_markets,lists_passing,threshold,4,13,0.25
+Jev 1.14,with_markets,lists_passing,threshold,5,14 or more,0.09
+Jev 1.14,with_markets,reservists_and_amcha_both_fail,threshold,true,true,0.46
+Jev 1.14,with_markets,turnout_below_2022,turnout,true,true,0.53
+Jev 1.14,with_markets,votes_cast,turnout,0,under 4.9 million,0.01
+Jev 1.14,with_markets,votes_cast,turnout,1,4.9-5.1 million,0.05
+Jev 1.14,with_markets,votes_cast,turnout,2,5.1-5.2 million,0.17
+Jev 1.14,with_markets,votes_cast,turnout,3,5.2-5.3 million,0.59
+Jev 1.14,with_markets,votes_cast,turnout,4,5.3-5.4 million,0.16
+Jev 1.14,with_markets,votes_cast,turnout,5,5.4-5.5 million,0.01
+Jev 1.14,with_markets,votes_cast,turnout,6,5.5 million or more,0.01
+Jev 1.14,with_markets,next_pm,government,netanyahu,Benjamin Netanyahu (Likud),0.21
+Jev 1.14,with_markets,next_pm,government,eisenkot,Gadi Eisenkot (Yashar),0.73
+Jev 1.14,with_markets,next_pm,government,bennett,Naftali Bennett (Together),0.01
+Jev 1.14,with_markets,next_pm,government,lieberman,Avigdor Lieberman (Yisrael Beiteinu),0
+Jev 1.14,with_markets,next_pm,government,other,Someone else,0.05
+Jev 1.14,with_markets,netanyahu_remains_pm,government,true,true,0.39
+Jev 1.14,with_markets,eisenkot_pm,government,true,true,0.43

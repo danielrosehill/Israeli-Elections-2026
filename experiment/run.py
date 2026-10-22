@@ -25,20 +25,29 @@ import httpx
 PANEL = ["typesafe/jev-1.14", "cloudflare/clef"]
 CONDITIONS = ["no_markets", "with_markets"]
 URL = "https://openrouter.ai/api/v1/systemone"
+# Clef's cheapest OpenRouter host (PrimeIntellect, 16k) silently truncates longer states: it bills exactly
+# 16,384 input tokens and answers from the prefix (seen 2026-10-22). DeepInfra serves the full 64k.
+PROVIDER = {"cloudflare/clef": {"only": ["deepinfra"]}}
+TRUNCATION_CAPS = {16384, 32768, 65536, 65537}
 API_FIELDS = ("type", "instructions", "criteria")
 
 
 async def ask(client, model, state, questions):
-    r = await client.post(URL, json={"model": model, "state": state, "questions": questions})
+    body = {"model": model, "state": state, "questions": questions}
+    if model in PROVIDER:
+        body["provider"] = PROVIDER[model]
+    r = await client.post(URL, json=body)
     if r.status_code != 200:
         return {"model": model, "http_status": r.status_code, "error": r.text[:2000]}
     data = r.json()
     missing = sorted(set(questions) - set(data.get("answers", {})))
+    tokens = (data.get("usage") or {}).get("input_tokens")
     return {
         "model": model, "served_by": data.get("model"), "provider": data.get("provider"),
         "generation_id": data.get("id"), "usage": data.get("usage"),
         "cost_usd": (data.get("usage") or {}).get("cost"),
-        "missing_answers": missing, "answers": data.get("answers"),
+        "missing_answers": missing, "suspected_truncation": tokens in TRUNCATION_CAPS,
+        "answers": data.get("answers"),
     }
 
 
@@ -69,10 +78,12 @@ async def main():
         res["condition"] = cond
         (out / f"{model.replace('/', '__')}__{cond}.json").write_text(json.dumps(res, indent=2, ensure_ascii=False))
         summary.append({k: res.get(k) for k in ("model", "condition", "provider", "usage", "cost_usd",
-                                                 "missing_answers", "http_status", "error")})
+                                                 "missing_answers", "suspected_truncation", "http_status", "error")})
     (out / "summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False))
     json.dump(summary, sys.stdout, indent=2, ensure_ascii=False)
     print(f"\ntotal cost: ${sum(s.get('cost_usd') or 0 for s in summary):.5f}")
+    if any(s.get("error") or s.get("missing_answers") or s.get("suspected_truncation") for s in summary):
+        sys.exit("run incomplete: see errors, missing_answers or suspected_truncation above")
 
 
 if __name__ == "__main__":

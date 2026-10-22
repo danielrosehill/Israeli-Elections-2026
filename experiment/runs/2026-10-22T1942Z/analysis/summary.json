@@ -1,0 +1,99 @@
+{
+  "run": "2026-10-22T1942Z",
+  "poll_mean_window": {
+    "since": "2026-10-08",
+    "polls": 24
+  },
+  "panel": {
+    "Clef / no_markets": {
+      "largest_list": {
+        "likud": 0.6322,
+        "yashar": 0.1827,
+        "together": 0.0699,
+        "other": 0.1152
+      },
+      "next_pm": {
+        "netanyahu": 0.8102,
+        "eisenkot": 0.0971,
+        "bennett": 0.047,
+        "lieberman": 0.0091,
+        "other": 0.0366
+      },
+      "netanyahu_bloc_61": 0.3107,
+      "opposition_zionist_61": 0.109,
+      "no_bloc_majority": 0.8178,
+      "expected_seats_sum_13_lists": 118.0,
+      "expected_netanyahu_bloc_ex_noam": 53.2,
+      "expected_zionist_opposition": 50.9,
+      "mean_consistency_gap": 0.078
+    },
+    "Clef / with_markets": {
+      "largest_list": {
+        "likud": 0.1082,
+        "yashar": 0.7282,
+        "together": 0.0341,
+        "other": 0.1295
+      },
+      "next_pm": {
+        "netanyahu": 0.3638,
+        "eisenkot": 0.5509,
+        "bennett": 0.0475,
+        "lieberman": 0.0124,
+        "other": 0.0254
+      },
+      "netanyahu_bloc_61": 0.3277,
+      "opposition_zionist_61": 0.1307,
+      "no_bloc_majority": 0.8036,
+      "expected_seats_sum_13_lists": 116.1,
+      "expected_netanyahu_bloc_ex_noam": 51.2,
+      "expected_zionist_opposition": 50.9,
+      "mean_consistency_gap": 0.097
+    },
+    "Jev 1.14 / no_markets": {
+      "largest_list": {
+        "likud": 0.87,
+        "yashar": 0.12,
+        "together": 0,
+        "other": 0.01
+      },
+      "next_pm": {
+        "netanyahu": 0.49,
+        "eisenkot": 0.11,
+        "bennett": 0.02,
+        "lieberman": 0,
+        "other": 0.38
+      },
+      "netanyahu_bloc_61": 0.54,
+      "opposition_zionist_61": 0.75,
+      "no_bloc_majority": 0.56,
+      "expected_seats_sum_13_lists": 125.9,
+      "expected_netanyahu_bloc_ex_noam": 60.1,
+      "expected_zionist_opposition": 52.3,
+      "mean_consistency_gap": 0.19
+    },
+    "Jev 1.14 / with_markets": {
+      "largest_list": {
+        "likud": 0.04,
+        "yashar": 0.96,
+        "together": 0,
+        "other": 0
+      },
+      "next_pm": {
+        "netanyahu": 0.21,
+        "eisenkot": 0.73,
+        "bennett": 0.01,
+        "lieberman": 0,
+        "other": 0.05
+      },
+      "netanyahu_bloc_61": 0.54,
+      "opposition_zionist_61": 0.6,
+      "no_bloc_majority": 0.52,
+      "expected_seats_sum_13_lists": 121.2,
+      "expected_netanyahu_bloc_ex_noam": 55.3,
+      "expected_zionist_opposition": 52.3,
+      "mean_consistency_gap": 0.211
+    }
+  },
+  "poll_mean_netanyahu_bloc_ex_noam": 53.2,
+  "poll_mean_zionist_opposition": 53.3
+}
